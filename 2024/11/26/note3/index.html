@@ -20,16 +20,20 @@
     
         <meta name="description" content="3-2 Activate Strict Mode1234567&#x27;use strict&#x27;;&#x2F;&#x2F;必须在文件的第一行let hasDriversLicense&#x3D;false;const passTest&#x3D;true;if(passTest) hasDriverLicense&#x3D;true; &#x2F;&#x2F;此处打错变量名；if（hasDriversLicense）console.log(&#x27;I">
 <meta property="og:type" content="article">
-<meta property="og:title" content="【UdemyJS】Session3笔记（共5&#x2F;20节）">
+<meta property="og:title" content="【UdemyJS】Session3笔记（共6&#x2F;20节）">
 <meta property="og:url" content="http://example.com/2024/11/26/note3/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="3-2 Activate Strict Mode1234567&#x27;use strict&#x27;;&#x2F;&#x2F;必须在文件的第一行let hasDriversLicense&#x3D;false;const passTest&#x3D;true;if(passTest) hasDriverLicense&#x3D;true; &#x2F;&#x2F;此处打错变量名；if（hasDriversLicense）console.log(&#x27;I">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/img/1732691623416.png">
+<meta property="og:image" content="http://example.com/img/1732707014746.png">
+<meta property="og:image" content="http://example.com/img/1732707364647.png">
 <meta property="article:published_time" content="2024-11-26T05:14:49.000Z">
-<meta property="article:modified_time" content="2024-11-26T20:31:12.996Z">
+<meta property="article:modified_time" content="2024-11-27T11:43:45.290Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="UdemyJS">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/1732691623416.png">
     
     
     <!--- Icon Part-->
@@ -41,7 +45,7 @@
     
     <title>
         
-            【UdemyJS】Session3笔记（共5/20节） | Syd&#39;s Blog
+            【UdemyJS】Session3笔记（共6/20节） | Syd&#39;s Blog
         
     </title>
 
@@ -309,7 +313,7 @@
 		<div class="article-title relative w-full">
 			
 			<div class="w-full flex items-center pt-6 justify-start">
-				<h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3">【UdemyJS】Session3笔记（共5/20节）</h1>
+				<h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3">【UdemyJS】Session3笔记（共6/20节）</h1>
 			</div>
 			
 		</div>
@@ -337,8 +341,8 @@
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2024-11-27 04:31:12</span>
-            <span class="mobile">2024-11-27 04:31:12</span>
+            <span class="desktop">2024-11-27 19:43:45</span>
+            <span class="mobile">2024-11-27 19:43:45</span>
             <span class="hover-info">Updated</span>
         </span>
     
@@ -398,16 +402,42 @@
 <h1 id="3-3-unctions"><a href="#3-3-unctions" class="headerlink" title="3-3 unctions"></a>3-3 unctions</h1><p>Functions就像变量，都是一个有名字的盒子，只不过变量里面储存的是值，而函数储存的是语句。由于太熟悉了就不做笔记了。<br><em>Don’t repeat youself.</em></p>
 <h1 id="3-4-3-5-Function-Declaration-vs-Expressions-vs-Arrow-Functions"><a href="#3-4-3-5-Function-Declaration-vs-Expressions-vs-Arrow-Functions" class="headerlink" title="3-4 3-5 Function Declaration vs. Expressions vs. Arrow Functions"></a>3-4 3-5 Function Declaration vs. Expressions vs. Arrow Functions</h1><p>函数声明 &amp; 函数表达式 &amp; 箭头函数</p>
 <p><em><strong>function Name(){}</strong></em> 是最常用的函数定义方式，即函数声明；</p>
-<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Function declaration</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">calcAge1</span>(<span class="params">birthYeah</span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="number">2037</span> - birthYeah;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">const</span> age1 = <span class="title function_">calcAge1</span>(<span class="number">1991</span>);</span><br><span class="line"><span class="comment">//普通函数声明可以在定义前被调用（hoisting）</span></span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Function declaration</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">calcAge1</span>(<span class="params">birthYeah</span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="number">2037</span> - birthYeah;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">const</span> age1 = <span class="title function_">calcAge1</span>(<span class="number">1991</span>);<span class="comment">// calling / running / invoking a function</span></span><br><span class="line"><span class="comment">//普通函数声明可以在定义前被调用（hoisting）</span></span><br></pre></td></tr></table></figure></div>
 
-<p>因为函数是一个值，所以我们可以：<br><em><strong>const Name &#x3D; function(){}</strong></em> 将一个匿名函数封装进变量内，即函数表达式；</p>
+<p>因为函数是一个值，所以：<br><em><strong>const Name &#x3D; function(){}</strong></em> 将一个匿名函数封装进变量内，即函数表达式；</p>
 <div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Function expression</span></span><br><span class="line"><span class="keyword">const</span> calcAge2 = <span class="keyword">function</span> (<span class="params">birthYeah</span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="number">2037</span> - birthYeah;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">const</span> age2 = <span class="title function_">calcAge2</span>(<span class="number">1991</span>);</span><br><span class="line"><span class="comment">//函数表达式只有在声明后才能调用（就像一个未定义的变量只会返回空值undefined）</span></span><br></pre></td></tr></table></figure></div>
 
-<p>进一步简化，ES6更新了箭头函数：<br><em><strong>const Name &#x3D; parameter &#x3D;&gt; ….</strong></em> ，省略return和括号，更具简洁性和易读性。</p>
-<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Arrow functions</span></span><br><span class="line"><span class="keyword">const</span> <span class="title function_">calcAge3</span> = birthYeah =&gt; <span class="number">2037</span> - birthYeah;</span><br><span class="line"><span class="keyword">const</span> age3 = <span class="title function_">calcAge3</span>(<span class="number">1991</span>);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(age3);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="title function_">yearsUntilRetirement</span> = (<span class="params">birthYeah, firstName</span>) =&gt; &#123;</span><br><span class="line">  <span class="keyword">const</span> age = <span class="number">2037</span> - birthYeah;</span><br><span class="line">  <span class="keyword">const</span> retirement = <span class="number">65</span> - age;</span><br><span class="line">  <span class="keyword">return</span> <span class="string">`<span class="subst">$&#123;firstName&#125;</span> retires in <span class="subst">$&#123;retirement&#125;</span> years`</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//Arrow函数也具有复杂性，特别是在需要更多代码行和参数的情况下</span></span><br><span class="line"><span class="comment">//另外，Arrow函数没有this关键字，虽然不知道为什么但是后面会讲</span></span><br></pre></td></tr></table></figure></div>
+<p>将函数表达式进一步简化，ES6更新了箭头函数：<br><em><strong>const Name &#x3D; parameter &#x3D;&gt; ….</strong></em> ，one-line省略return和括号，更具简洁性和易读性。</p>
+<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Arrow functions</span></span><br><span class="line"><span class="keyword">const</span> <span class="title function_">calcAge3</span> = birthYeah =&gt; <span class="number">2037</span> - birthYeah;</span><br><span class="line"><span class="keyword">const</span> age3 = <span class="title function_">calcAge3</span>(<span class="number">1991</span>);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(age3);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="title function_">yearsUntilRetirement</span> = (<span class="params">birthYeah, firstName</span>) =&gt; &#123;</span><br><span class="line">  <span class="keyword">const</span> age = <span class="number">2037</span> - birthYeah;</span><br><span class="line">  <span class="keyword">const</span> retirement = <span class="number">65</span> - age;</span><br><span class="line">  <span class="keyword">return</span> <span class="string">`<span class="subst">$&#123;firstName&#125;</span> retires in <span class="subst">$&#123;retirement&#125;</span> years`</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//Arrow函数在需要更多代码行和参数的情况下,只相当于将function替换成了=&gt;,不再那么简略了。</span></span><br><span class="line"><span class="comment">//另外，Arrow函数没有this关键字（虽然不知道为什么但是后面会讲:)</span></span><br></pre></td></tr></table></figure></div>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/img/1732691623416.png"
+                      alt="Screenshot"
+                ></p>
 <blockquote>
 <p>*现在是2024&#x2F;11&#x2F;27 4:00.</p>
 </blockquote>
+<h1 id="3-6-Functions-Calling-Other-Functions"><a href="#3-6-Functions-Calling-Other-Functions" class="headerlink" title="3-6 Functions Calling Other Functions"></a>3-6 Functions Calling Other Functions</h1><p>在函数中调用函数。</p>
+<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> cutPieces = <span class="keyword">function</span> (<span class="params">fruit</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> fruit * <span class="number">4</span>;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> fruitProcessor = <span class="keyword">function</span> (<span class="params">apples, oranges</span>) &#123;</span><br><span class="line">    <span class="keyword">const</span> applePieces = <span class="title function_">cutPieces</span>(apples);</span><br><span class="line">    <span class="keyword">const</span> orangePieces = <span class="title function_">cutPieces</span>(oranges);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">const</span> juice = <span class="string">`Juice with <span class="subst">$&#123;applePieces&#125;</span> pieces of apple and <span class="subst">$&#123;orangePieces&#125;</span> pieces of orange.`</span>;</span><br><span class="line">    <span class="keyword">return</span> juice;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="title function_">alert</span>(<span class="title function_">fruitProcessor</span>(<span class="number">2</span>, <span class="number">3</span>));</span><br></pre></td></tr></table></figure></div>
+<h1 id="3-7-Reviewing-Functions"><a href="#3-7-Reviewing-Functions" class="headerlink" title="3-7 Reviewing Functions"></a>3-7 Reviewing Functions</h1><p>已整合进上文</p>
+<h1 id="3-8-Coding-Challenge-1"><a href="#3-8-Coding-Challenge-1" class="headerlink" title="3-8 Coding Challenge #1"></a>3-8 Coding Challenge #1</h1><div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">calcAverage</span> = (<span class="params">a, b, c</span>) =&gt; (a + b + c) / <span class="number">3</span>;</span><br><span class="line"><span class="keyword">let</span> avgDolphins = <span class="title function_">calcAverage</span>(<span class="number">85</span>, <span class="number">54</span>, <span class="number">41</span>);<span class="comment">//use let, so we can reassign them.</span></span><br><span class="line"><span class="keyword">let</span> avgKoalas = <span class="title function_">calcAverage</span>(<span class="number">23</span>, <span class="number">34</span>, <span class="number">27</span>);<span class="comment">//use let, so we can reassign them.</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(avgDolphins, avgKoalas);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> checkWinner = <span class="keyword">function</span> (<span class="params">avgDolphins, avgKoalas</span>) &#123;</span><br><span class="line">    <span class="keyword">if</span> (avgDolphins &gt;= avgKoalas * <span class="number">2</span>) &#123;</span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">`Dolphins win (<span class="subst">$&#123;avgDolphins&#125;</span> vs. <span class="subst">$&#123;avgKoalas&#125;</span>)`</span>);</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (avgKoalas &gt;= avgDolphins * <span class="number">2</span>) &#123;</span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">`Koalas win (<span class="subst">$&#123;avgKoalas&#125;</span> vs. <span class="subst">$&#123;avgDolphins&#125;</span>)`</span>);</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">`No team wins!`</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="title function_">checkWinner</span>(<span class="number">2</span>, <span class="number">1</span>);</span><br></pre></td></tr></table></figure></div>
+<blockquote>
+<p>*现在是2024&#x2F;11&#x2F;27 15:37.</p>
+</blockquote>
+<h1 id="3-9-Introduction-to-Arrays"><a href="#3-9-Introduction-to-Arrays" class="headerlink" title="3-9 Introduction to Arrays"></a>3-9 Introduction to Arrays</h1><div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//这两个创建数组的方法有相同的效果</span></span><br><span class="line"><span class="keyword">const</span> friends = [<span class="string">&#x27;Micheal&#x27;</span>,<span class="string">&#x27;Steven&#x27;</span>,<span class="string">&#x27;Peter&#x27;</span>];</span><br><span class="line"><span class="keyword">const</span> years = <span class="keyword">new</span> <span class="title class_">Array</span>(<span class="number">1991</span>,<span class="number">1984</span>,<span class="number">2008</span>,<span class="number">2020</span>);<span class="comment">//使用Array函数创建数组</span></span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(friends[<span class="number">0</span>]);<span class="comment">//=&gt; &#x27;Micheal&#x27;</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(friends.<span class="property">length</span>);<span class="comment">//=&gt; 3</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(friends[friends.<span class="property">length</span> - <span class="number">1</span>]);<span class="comment">//=&gt; &#x27;Peter&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//我们可以改动由const声明的数组，但是不能将整个数组替换为其他值。</span></span><br><span class="line">friends[<span class="number">2</span>]=<span class="string">&#x27;Jay&#x27;</span>;<span class="comment">//[&#x27;Micheal&#x27;,&#x27;Steven&#x27;,&#x27;Jay&#x27;]</span></span><br><span class="line"><span class="comment">//friends = [&#x27;Bob&#x27;,&#x27;Alice&#x27;];×××，会报错。</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//Array数组非常灵活，可以容纳不同类型的值、变量、表达式、甚至另一个数组。</span></span><br><span class="line"><span class="keyword">const</span> firstName = <span class="string">&#x27;Jonas&#x27;</span>;</span><br><span class="line"><span class="keyword">const</span> jonas = [firstName, <span class="string">&#x27;Schemdtmann&#x27;</span>, <span class="number">2047</span>-<span class="number">1991</span>, <span class="string">&#x27;teacher&#x27;</span>, friends];</span><br></pre></td></tr></table></figure></div>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/img/1732707014746.png"
+                      alt="Screenshot"
+                ></p>
+<p>另外，一个数组+一个数字 会变成 一个字符串+一个字符串，就像这样：<br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/img/1732707364647.png"
+                      alt="所以是为了什么……"
+                ></p>
 
 		</div>
 
@@ -415,14 +445,14 @@
 		<div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
 			<div class="article-copyright-info-container">
     <ul>
-        <li><strong>Title:</strong> 【UdemyJS】Session3笔记（共5/20节）</li>
+        <li><strong>Title:</strong> 【UdemyJS】Session3笔记（共6/20节）</li>
         <li><strong>Author:</strong> Artificial-Fool</li>
         <li><strong>Created at
                 :</strong> 2024-11-26 13:14:49</li>
         
             <li>
                 <strong>Updated at
-                    :</strong> 2024-11-27 04:31:12
+                    :</strong> 2024-11-27 19:43:45
             </li>
         
         <li>
@@ -527,8 +557,8 @@
 		<div class="post-toc-wrap">
 	<div class="post-toc">
 		<div class="toc-title">On this page</div>
-		<div class="page-title">【UdemyJS】Session3笔记（共5/20节）</div>
-		<ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#3-2-Activate-Strict-Mode"><span class="nav-text">3-2 Activate Strict Mode</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-3-unctions"><span class="nav-text">3-3 unctions</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-4-3-5-Function-Declaration-vs-Expressions-vs-Arrow-Functions"><span class="nav-text">3-4 3-5 Function Declaration vs. Expressions vs. Arrow Functions</span></a></li></ol>
+		<div class="page-title">【UdemyJS】Session3笔记（共6/20节）</div>
+		<ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#3-2-Activate-Strict-Mode"><span class="nav-text">3-2 Activate Strict Mode</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-3-unctions"><span class="nav-text">3-3 unctions</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-4-3-5-Function-Declaration-vs-Expressions-vs-Arrow-Functions"><span class="nav-text">3-4 3-5 Function Declaration vs. Expressions vs. Arrow Functions</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-6-Functions-Calling-Other-Functions"><span class="nav-text">3-6 Functions Calling Other Functions</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-7-Reviewing-Functions"><span class="nav-text">3-7 Reviewing Functions</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-8-Coding-Challenge-1"><span class="nav-text">3-8 Coding Challenge #1</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-9-Introduction-to-Arrays"><span class="nav-text">3-9 Introduction to Arrays</span></a></li></ol>
 
 	</div>
 </div>
