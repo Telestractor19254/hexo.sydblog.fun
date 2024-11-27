@@ -106,7 +106,27 @@
 <meta name="generator" content="Hexo 7.3.0"></head>
 
 
-	<script src="https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
+	<script>
+		// Function to check if the device is mobile
+		function isMobileDevice() {
+			return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+		}
+
+		// If not a mobile device, load the script
+		if (!isMobileDevice()) {
+			var script = document.createElement('script');
+			script.src = "https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"; // Replace with your script URL
+			script.onload = function () {
+				console.log('Script loaded successfully.');
+			};
+			script.onerror = function () {
+				console.error('Failed to load script.');
+			};
+			document.head.appendChild(script);
+		} else {
+			console.log('This is a mobile device. The script will not be loaded.');
+		}
+	</script>
 
 	<body>
 		<div class="progress-bar-container">
