@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Hexo Theme Redefine">
+    
+    <meta name="author" content="Artificial-Fool">
+    <!-- preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    
+    <!--- Seo Part-->
+    
+    <link rel="canonical" href="http://example.com/2024/11/26/udemyjs-note3/"/>
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="revisit-after" content="1 days">
+    
+        <meta name="description" content="3-2 Activate Strict Mode1234567&#x27;use strict&#x27;;&#x2F;&#x2F;必须在文件的第一行let hasDriversLicense&#x3D;false;const passTest&#x3D;true;if(passTest) hasDriverLicense&#x3D;true; &#x2F;&#x2F;此处打错变量名；if（hasDriversLicense）console.log(&#x27;I">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【UdemyJS】Session3笔记（共13&#x2F;20节）">
+<meta property="og:url" content="http://example.com/2024/11/26/UdemyJS-note3/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="3-2 Activate Strict Mode1234567&#x27;use strict&#x27;;&#x2F;&#x2F;必须在文件的第一行let hasDriversLicense&#x3D;false;const passTest&#x3D;true;if(passTest) hasDriverLicense&#x3D;true; &#x2F;&#x2F;此处打错变量名；if（hasDriversLicense）console.log(&#x27;I">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/img/1732691623416.png">
+<meta property="og:image" content="http://example.com/img/1732707014746.png">
+<meta property="og:image" content="http://example.com/img/1732707364647.png">
+<meta property="article:published_time" content="2024-11-26T05:14:49.000Z">
+<meta property="article:modified_time" content="2024-11-28T17:08:37.278Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="UdemyJS">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/1732691623416.png">
+    
+    
+    <!--- Icon Part-->
+    <link rel="icon" type="image/png" href="/images/4b020f8ed73749dac4750629821699a3cd0408cd.jpg" sizes="192x192">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/4b020f8ed73749dac4750629821699a3cd0408cd.jpg">
+    <meta name="theme-color" content="#A31F34">
+    <link rel="shortcut icon" href="/images/4b020f8ed73749dac4750629821699a3cd0408cd.jpg">
+    <!--- Page Info-->
+    
+    <title>
+        
+            【UdemyJS】Session3笔记（共13/20节） | Syd&#39;s Blog
+        
+    </title>
+
+    
+<link rel="stylesheet" href="/fonts/Chillax/chillax.css">
+
+
+    <!--- Inject Part-->
+    
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    
+        
+<link rel="stylesheet" href="/build/css/tailwind.css">
+
+    
+
+    
+<link rel="stylesheet" href="/fonts/GeistMono/geist-mono.css">
+
+    
+<link rel="stylesheet" href="/fonts/Geist/geist.css">
+
+    <!--- Font Part-->
+    
+    
+    
+    
+    
+    
+
+    <script id="hexo-configurations">
+    window.config = {"hostname":"example.com","root":"/","language":"en"};
+    window.theme = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center","image_caption":false,"link_icon":true,"title_alignment":"left","headings_top_spacing":{"h1":"3.2rem","h2":"2.4rem","h3":"1.9rem","h4":"1.6rem","h5":"1.4rem","h6":"1.3rem"}},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":true,"auto":false,"list":[]},"code_block":{"copy":true,"style":"mac","highlight_theme":{"light":"github","dark":"vs2015"},"font":{"enable":false,"family":null,"url":null}},"toc":{"enable":true,"max_depth":3,"number":false,"expand":true,"init_open":true},"copyright":{"enable":true,"default":"cc_by_nc_sa"},"lazyload":true,"pangu_js":false,"recommendation":{"enable":false,"title":"推荐阅读","limit":3,"mobile_limit":2,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#A31F34","secondary":null,"default_mode":"light"},"global":{"fonts":{"chinese":{"enable":false,"family":null,"url":null},"english":{"enable":false,"family":null,"url":null},"title":{"enable":false,"family":null,"url":null}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":false},"scroll_progress":{"bar":false,"percentage":true},"website_counter":{"url":"https://cn.vercount.one/js","enable":true,"site_pv":true,"site_uv":true,"post_pv":true},"single_page":true,"preloader":{"enable":false,"custom_message":null},"open_graph":true,"google_analytics":{"enable":false,"id":null}},"home_banner":{"enable":true,"style":"fixed","image":{"light":"/images/wallhaven-wqery6-light.webp","dark":"/images/wallhaven-wqery6-dark.webp"},"title":"Artificial-Fool","subtitle":{"text":[],"hitokoto":{"enable":false,"show_author":false,"api":"https://v1.hitokoto.cn"},"typing_speed":100,"backing_speed":80,"starting_delay":500,"backing_delay":1500,"loop":true,"smart_backspace":true},"text_color":{"light":"#fff","dark":"#d1d1b6"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":false,"family":null,"url":null},"social_links":{"enable":false,"style":"default","links":{"github":null,"instagram":null,"zhihu":null,"twitter":null,"email":null},"qrs":{"weixin":null}}},"plugins":{"feed":{"enable":false},"aplayer":{"enable":false,"type":"fixed","audios":[{"name":null,"artist":null,"url":null,"cover":null,"lrc":null}]},"mermaid":{"enable":false,"version":"9.3.0"}},"version":"2.8.0","navbar":{"auto_hide":false,"color":{"left":"#f78736","right":"#367df7","transparency":35},"width":{"home":"1200px","pages":"1000px"},"links":{"Home":{"path":"/","icon":"fa-regular fa-house"},"Tags":{"icon":"fa-solid fa-tags","path":"/tags/"},"Categories":{"icon":"fa-solid fa-folder","path":"/categories/"}},"search":{"enable":false,"preload":true}},"page_templates":{"friends_column":2,"tags_style":"blur"},"home":{"sidebar":{"enable":true,"position":"left","first_item":"menu","announcement":null,"show_on_mobile":true,"links":null},"article_date_format":"auto","excerpt_length":200,"categories":{"enable":true,"limit":3},"tags":{"enable":true,"limit":3}},"footerStart":"2024/11/20 22:38:40"};
+    window.lang_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
+    window.data = {"masonry":false};
+  </script>
+    
+    <!--- Fontawesome Part-->
+    
+<link rel="stylesheet" href="/fontawesome/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/brands.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/solid.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/regular.min.css">
+
+    
+    
+    
+    
+        
+<link rel="stylesheet" href="/fontawesome/sharp-solid.min.css">
+
+    
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+	<script>
+		// Function to check if the device is mobile
+		function isMobileDevice() {
+			return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+		}
+
+		// If not a mobile device, load the script
+		if (!isMobileDevice()) {
+			var script = document.createElement('script');
+			script.src = "https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"; // Replace with your script URL
+			script.onload = function () {
+				console.log('Script loaded successfully.');
+			};
+			script.onerror = function () {
+				console.error('Failed to load script.');
+			};
+			document.head.appendChild(script);
+		} else {
+			console.log('This is a mobile device. The script will not be loaded.');
+		}
+	</script>
+
+	<body>
+		<div class="progress-bar-container">
+	
+
+	
+	<span class="pjax-progress-bar"></span>
+	<!--        <span class="swup-progress-icon">-->
+	<!--            <i class="fa-solid fa-circle-notch fa-spin"></i>-->
+	<!--        </span>-->
+	
+</div>
+
+<main class="page-container" id="swup">
+
+	
+
+	<div class="main-content-container flex flex-col justify-between min-h-dvh">
+		<div class="main-content-header">
+			<header class="navbar-container px-6 md:px-12">
+    <div class="navbar-content transition-navbar ">
+        <div class="left">
+            
+            <a class="logo-title" href="/">
+                
+                Syd&#39;s Blog
+                
+            </a>
+        </div>
+
+        <div class="right">
+            <!-- PC -->
+            <div class="desktop">
+                <ul class="navbar-list">
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class=""
+                                   href="/"
+                                        >
+                                    <i class="fa-regular fa-house fa-fw"></i>
+                                    HOME
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class=""
+                                   href="/tags/"
+                                        >
+                                    <i class="fa-solid fa-tags fa-fw"></i>
+                                    TAGS
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class=""
+                                   href="/categories/"
+                                        >
+                                    <i class="fa-solid fa-folder fa-fw"></i>
+                                    CATEGORIES
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                    
+                </ul>
+            </div>
+            <!-- Mobile -->
+            <div class="mobile">
+                
+                <div class="icon-item navbar-bar">
+                    <div class="navbar-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile sheet -->
+    <div class="navbar-drawer h-dvh w-full absolute top-0 left-0 bg-background-color flex flex-col justify-between">
+        <ul class="drawer-navbar-list flex flex-col px-4 justify-center items-start">
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/"
+                        >
+                            <span>
+                                HOME
+                            </span>
+                            
+                                <i class="fa-regular fa-house fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/tags/"
+                        >
+                            <span>
+                                TAGS
+                            </span>
+                            
+                                <i class="fa-solid fa-tags fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/categories/"
+                        >
+                            <span>
+                                CATEGORIES
+                            </span>
+                            
+                                <i class="fa-solid fa-folder fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+
+            
+            
+        </ul>
+
+        <div class="statistics flex justify-around my-2.5">
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/tags">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">1</div>
+        <div class="label text-third-text-color text-sm">Tags</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/categories">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">1</div>
+        <div class="label text-third-text-color text-sm">Categories</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">6</div>
+        <div class="label text-third-text-color text-sm">Posts</div>
+    </a>
+</div>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+		</div>
+
+		<div class="main-content-body transition-fade-up">
+			
+
+			<div class="main-content">
+				<div class="post-page-container flex relative justify-between box-border w-full h-full">
+	<div class="article-content-container">
+
+		<div class="article-title relative w-full">
+			
+			<div class="w-full flex items-center pt-6 justify-start">
+				<h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3">【UdemyJS】Session3笔记（共13/20节）</h1>
+			</div>
+			
+		</div>
+
+		
+		<div class="article-header flex flex-row gap-2 items-center px-2 sm:px-6 md:px-8">
+			<div class="avatar w-[46px] h-[46px] flex-shrink-0 rounded-medium border border-border-color p-[1px]">
+				<img src="/images/4b020f8ed73749dac4750629821699a3cd0408cd.jpg">
+			</div>
+			<div class="info flex flex-col justify-between">
+				<div class="author flex items-center">
+					<span class="name text-default-text-color text-lg font-semibold">Artificial-Fool</span>
+					
+					<span class="author-label ml-1.5 text-xs px-2 py-0.5 rounded-small text-third-text-color border border-shadow-color-1">Lv1</span>
+					
+				</div>
+				<div class="meta-info">
+					<div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
+        <span class="desktop">2024-11-26 13:14:49</span>
+        <span class="mobile">2024-11-26 13:14:49</span>
+        <span class="hover-info">Created</span>
+    </span>
+    
+        <span class="article-date article-meta-item">
+            <i class="fa-regular fa-wrench"></i>&nbsp;
+            <span class="desktop">2024-11-29 01:08:37</span>
+            <span class="mobile">2024-11-29 01:08:37</span>
+            <span class="hover-info">Updated</span>
+        </span>
+    
+
+    
+        <span class="article-categories article-meta-item">
+            <i class="fa-regular fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/categories/notes/">notes</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fa-regular fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/UdemyJS/">UdemyJS</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fa-regular fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
+    
+</div>
+
+				</div>
+			</div>
+		</div>
+		
+
+		
+
+
+		<div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
+			<h1 id="3-2-Activate-Strict-Mode"><a href="#3-2-Activate-Strict-Mode" class="headerlink" title="3-2 Activate Strict Mode"></a>3-2 Activate Strict Mode</h1><div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&#x27;use strict&#x27;</span>;<span class="comment">//必须在文件的第一行</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> hasDriversLicense=<span class="literal">false</span>;</span><br><span class="line"><span class="keyword">const</span> passTest=<span class="literal">true</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span>(passTest) hasDriverLicense=<span class="literal">true</span>; <span class="comment">//此处打错变量名；</span></span><br><span class="line"><span class="keyword">if</span>（hasDriversLicense）<span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;I can drive:D&#x27;</span>):</span><br></pre></td></tr></table></figure></div>
+<p>当严格模式未激活时，该程序不会报错也不会输出，因为原变量hasDriver<strong>s</strong>License未被改变，反而而生成了一个新的变量hasDriverLicense；<br>当严格模式激活时，在hasDriverLicense处会直接报错defined,从而避免意料之外的bug。</p>
+<p>严格模式还会禁止使用预留词汇定义变量等。启用严格模式能帮助我们编写更安全的代码。</p>
+<h1 id="3-3-unctions"><a href="#3-3-unctions" class="headerlink" title="3-3 unctions"></a>3-3 unctions</h1><p>Functions就像变量，都是一个有名字的盒子，只不过变量里面储存的是值，而函数储存的是语句。由于太熟悉了就不做笔记了。<br><em>Don’t repeat youself.</em></p>
+<h1 id="3-4-3-5-Function-Declaration-vs-Expressions-vs-Arrow-Functions"><a href="#3-4-3-5-Function-Declaration-vs-Expressions-vs-Arrow-Functions" class="headerlink" title="3-4 3-5 Function Declaration vs. Expressions vs. Arrow Functions"></a>3-4 3-5 Function Declaration vs. Expressions vs. Arrow Functions</h1><p>函数声明 &amp; 函数表达式 &amp; 箭头函数</p>
+<p><em><strong>function Name(){}</strong></em> 是最常用的函数定义方式，即函数声明；</p>
+<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Function declaration</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">calcAge1</span>(<span class="params">birthYeah</span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="number">2037</span> - birthYeah;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">const</span> age1 = <span class="title function_">calcAge1</span>(<span class="number">1991</span>);<span class="comment">// calling / running / invoking a function</span></span><br><span class="line"><span class="comment">//普通函数声明可以在定义前被调用（hoisting）</span></span><br></pre></td></tr></table></figure></div>
+
+<p>因为函数是一个值，所以：<br><em><strong>const Name &#x3D; function(){}</strong></em> 将一个匿名函数封装进变量内，即函数表达式；</p>
+<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Function expression</span></span><br><span class="line"><span class="keyword">const</span> calcAge2 = <span class="keyword">function</span> (<span class="params">birthYeah</span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="number">2037</span> - birthYeah;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">const</span> age2 = <span class="title function_">calcAge2</span>(<span class="number">1991</span>);</span><br><span class="line"><span class="comment">//函数表达式只有在声明后才能调用（就像一个未定义的变量只会返回空值undefined）</span></span><br></pre></td></tr></table></figure></div>
+
+<p>将函数表达式进一步简化，ES6更新了箭头函数：<br><em><strong>const Name &#x3D; parameter &#x3D;&gt; ….</strong></em> ，one-line省略return和括号，更具简洁性和易读性。</p>
+<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Arrow functions</span></span><br><span class="line"><span class="keyword">const</span> <span class="title function_">calcAge3</span> = birthYeah =&gt; <span class="number">2037</span> - birthYeah;</span><br><span class="line"><span class="keyword">const</span> age3 = <span class="title function_">calcAge3</span>(<span class="number">1991</span>);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(age3);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="title function_">yearsUntilRetirement</span> = (<span class="params">birthYeah, firstName</span>) =&gt; &#123;</span><br><span class="line">  <span class="keyword">const</span> age = <span class="number">2037</span> - birthYeah;</span><br><span class="line">  <span class="keyword">const</span> retirement = <span class="number">65</span> - age;</span><br><span class="line">  <span class="keyword">return</span> <span class="string">`<span class="subst">$&#123;firstName&#125;</span> retires in <span class="subst">$&#123;retirement&#125;</span> years`</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//Arrow函数在需要更多代码行和参数的情况下,只相当于将function替换成了=&gt;,不再那么简略了。</span></span><br><span class="line"><span class="comment">//另外，Arrow函数没有this关键字（虽然不知道为什么但是后面会讲:)</span></span><br></pre></td></tr></table></figure></div>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/img/1732691623416.png"
+                      alt="Screenshot"
+                ></p>
+<blockquote>
+<p>*现在是2024&#x2F;11&#x2F;27 4:00.</p>
+</blockquote>
+<h1 id="3-6-Functions-Calling-Other-Functions"><a href="#3-6-Functions-Calling-Other-Functions" class="headerlink" title="3-6 Functions Calling Other Functions"></a>3-6 Functions Calling Other Functions</h1><p>在函数中调用函数。</p>
+<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> cutPieces = <span class="keyword">function</span> (<span class="params">fruit</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> fruit * <span class="number">4</span>;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> fruitProcessor = <span class="keyword">function</span> (<span class="params">apples, oranges</span>) &#123;</span><br><span class="line">    <span class="keyword">const</span> applePieces = <span class="title function_">cutPieces</span>(apples);</span><br><span class="line">    <span class="keyword">const</span> orangePieces = <span class="title function_">cutPieces</span>(oranges);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">const</span> juice = <span class="string">`Juice with <span class="subst">$&#123;applePieces&#125;</span> pieces of apple and <span class="subst">$&#123;orangePieces&#125;</span> pieces of orange.`</span>;</span><br><span class="line">    <span class="keyword">return</span> juice;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="title function_">alert</span>(<span class="title function_">fruitProcessor</span>(<span class="number">2</span>, <span class="number">3</span>));</span><br></pre></td></tr></table></figure></div>
+<h1 id="3-7-Reviewing-Functions"><a href="#3-7-Reviewing-Functions" class="headerlink" title="3-7 Reviewing Functions"></a>3-7 Reviewing Functions</h1><p>已整合进上文</p>
+<h1 id="3-8-Coding-Challenge-1"><a href="#3-8-Coding-Challenge-1" class="headerlink" title="3-8 Coding Challenge #1"></a>3-8 Coding Challenge #1</h1><div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">calcAverage</span> = (<span class="params">a, b, c</span>) =&gt; (a + b + c) / <span class="number">3</span>;</span><br><span class="line"><span class="keyword">let</span> avgDolphins = <span class="title function_">calcAverage</span>(<span class="number">85</span>, <span class="number">54</span>, <span class="number">41</span>);<span class="comment">//use let, so we can reassign them.</span></span><br><span class="line"><span class="keyword">let</span> avgKoalas = <span class="title function_">calcAverage</span>(<span class="number">23</span>, <span class="number">34</span>, <span class="number">27</span>);<span class="comment">//use let, so we can reassign them.</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(avgDolphins, avgKoalas);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> checkWinner = <span class="keyword">function</span> (<span class="params">avgDolphins, avgKoalas</span>) &#123;</span><br><span class="line">    <span class="keyword">if</span> (avgDolphins &gt;= avgKoalas * <span class="number">2</span>) &#123;</span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">`Dolphins win (<span class="subst">$&#123;avgDolphins&#125;</span> vs. <span class="subst">$&#123;avgKoalas&#125;</span>)`</span>);</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (avgKoalas &gt;= avgDolphins * <span class="number">2</span>) &#123;</span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">`Koalas win (<span class="subst">$&#123;avgKoalas&#125;</span> vs. <span class="subst">$&#123;avgDolphins&#125;</span>)`</span>);</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">`No team wins!`</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="title function_">checkWinner</span>(<span class="number">2</span>, <span class="number">1</span>);</span><br></pre></td></tr></table></figure></div>
+<blockquote>
+<p>*现在是2024&#x2F;11&#x2F;27 15:37.</p>
+</blockquote>
+<h1 id="3-9-Introduction-to-Arrays"><a href="#3-9-Introduction-to-Arrays" class="headerlink" title="3-9 Introduction to Arrays"></a>3-9 Introduction to Arrays</h1><p>数组，js数据格式其一，以[]构成。<br><strong>数组中元素的顺序十分重要，Array[index]可以取出对应的值。更多用于有序的数据；</strong></p>
+<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//创建数组</span></span><br><span class="line"><span class="keyword">const</span> friends = [<span class="string">&#x27;Micheal&#x27;</span>,<span class="string">&#x27;Steven&#x27;</span>,<span class="string">&#x27;Peter&#x27;</span>];</span><br><span class="line"><span class="keyword">const</span> years = <span class="keyword">new</span> <span class="title class_">Array</span>(<span class="number">1991</span>,<span class="number">1984</span>,<span class="number">2008</span>,<span class="number">2020</span>);<span class="comment">//使用Array函数创建数组</span></span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(friends[<span class="number">0</span>]);<span class="comment">//=&gt; &#x27;Micheal&#x27;</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(friends.<span class="property">length</span>);<span class="comment">//=&gt; 3</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(friends[friends.<span class="property">length</span> - <span class="number">1</span>]);<span class="comment">//=&gt; &#x27;Peter&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//我们可以改动由const声明的数组，但是不能将整个数组替换为其他值。</span></span><br><span class="line">friends[<span class="number">2</span>]=<span class="string">&#x27;Jay&#x27;</span>;<span class="comment">//[&#x27;Micheal&#x27;,&#x27;Steven&#x27;,&#x27;Jay&#x27;]</span></span><br><span class="line"><span class="comment">//friends = [&#x27;Bob&#x27;,&#x27;Alice&#x27;];×××，会报错。</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//Array数组非常灵活，可以容纳不同类型的值、变量、表达式、甚至另一个数组。</span></span><br><span class="line"><span class="keyword">const</span> firstName = <span class="string">&#x27;Jonas&#x27;</span>;</span><br><span class="line"><span class="keyword">const</span> jonas = [firstName, <span class="string">&#x27;Schemdtmann&#x27;</span>, <span class="number">2047</span>-<span class="number">1991</span>, <span class="string">&#x27;teacher&#x27;</span>, friends];</span><br></pre></td></tr></table></figure></div>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/img/1732707014746.png"
+                      alt="Screenshot"
+                ></p>
+<p>另外，一个数组+一个数字 会变成 一个字符串+一个字符串，就像这样：<br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/img/1732707364647.png"
+                      alt="所以是为了什么……"
+                ></p>
+<h1 id="3-10-Basic-Array-Operations-Methods"><a href="#3-10-Basic-Array-Operations-Methods" class="headerlink" title="3-10 Basic Array Operations (Methods)"></a>3-10 Basic Array Operations (Methods)</h1><p>元素操作有shift、pop、unshift、push，元素查询有indexOf、includes</p>
+<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> friends = [<span class="string">&#x27;Micheal&#x27;</span>,<span class="string">&#x27;Steven&#x27;</span>,<span class="string">&#x27;Peter&#x27;</span>];<span class="comment">//假设每一行代码只输出不生效↓</span></span><br><span class="line"><span class="comment">//删除元素</span></span><br><span class="line">friends.<span class="title function_">shift</span>();<span class="comment">//[&#x27;Steven&#x27;, &#x27;Peter&#x27;];</span></span><br><span class="line">friends.<span class="title function_">pop</span>();<span class="comment">//[&#x27;Michael&#x27;, &#x27;Steven&#x27;];</span></span><br><span class="line"><span class="comment">//添加元素</span></span><br><span class="line">friends.<span class="title function_">unshift</span>(<span class="string">&#x27;JOHN&#x27;</span>);<span class="comment">//[&#x27;JOHN&#x27;, &#x27;Micheal&#x27;,&#x27;Steven&#x27;,&#x27;Peter&#x27;];</span></span><br><span class="line">friends.<span class="title function_">push</span>(<span class="string">&#x27;JONH&#x27;</span>);<span class="comment">//[&#x27;Micheal&#x27;,&#x27;Steven&#x27;,&#x27;Peter&#x27;,&#x27;JOHN&#x27;];</span></span><br><span class="line"><span class="comment">//检索元素（retrieve）</span></span><br><span class="line">friends.<span class="title function_">indexOf</span>(<span class="string">&#x27;Steven&#x27;</span>);<span class="comment">//1;</span></span><br><span class="line">friends.<span class="title function_">includes</span>(<span class="string">&#x27;Steeven&#x27;</span>);<span class="comment">//false;</span></span><br></pre></td></tr></table></figure></div>
+<h1 id="3-11-Coding-Challenge-2"><a href="#3-11-Coding-Challenge-2" class="headerlink" title="3-11 Coding Challenge #2"></a>3-11 Coding Challenge #2</h1><p>计算小费并制作成数组：</p>
+<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> bills = [<span class="number">125</span>, <span class="number">555</span>, <span class="number">44</span>];</span><br><span class="line"><span class="keyword">const</span> tips = [];</span><br><span class="line"><span class="keyword">const</span> totals = [];</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">// 极简函数：</span></span><br><span class="line"><span class="keyword">const</span> <span class="title function_">calcTip</span> = bill =&gt; bill &gt;= <span class="number">50</span> &amp;&amp; bill &lt;= <span class="number">300</span> ? bill * <span class="number">0.15</span> : bill * <span class="number">0.2</span>;</span><br><span class="line"><span class="comment">// 经典函数：</span></span><br><span class="line"><span class="comment">// const calcTip = function (bill) &#123;</span></span><br><span class="line"><span class="comment">//     if (bill &gt;= 50 &amp;&amp; bill &lt;= 300) &#123;</span></span><br><span class="line"><span class="comment">//         return bill * 0.15;</span></span><br><span class="line"><span class="comment">//     &#125; else if (bill &gt;= 0) &#123;</span></span><br><span class="line"><span class="comment">//         return bill * 0.2;</span></span><br><span class="line"><span class="comment">//     &#125; else &#123;</span></span><br><span class="line"><span class="comment">//         return -1;</span></span><br><span class="line"><span class="comment">//     &#125;</span></span><br><span class="line"><span class="comment">// &#125;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; bills.<span class="property">length</span>; i++) &#123;</span><br><span class="line">    tips.<span class="title function_">push</span>(<span class="title function_">calcTip</span>(bills[i]))；</span><br><span class="line">    totals.<span class="title function_">push</span>(<span class="title function_">calcTip</span>(bills[i]) + bills[i])；</span><br><span class="line">&#125;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(bills)；</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(tips)；</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(totals)；</span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
+
+<h1 id="3-12-Introduction-to-Objects"><a href="#3-12-Introduction-to-Objects" class="headerlink" title="3-12 Introduction to Objects"></a>3-12 Introduction to Objects</h1><p>对象，js数据格式其二，以{}构成。<br><strong>对象储存键值对,每一组称为一个属性(property)。对象无序，更多用于非结构化的数据；</strong></p>
+<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//Object literal Syntax 对象文字语法</span></span><br><span class="line"><span class="keyword">const</span> jonas = &#123;</span><br><span class="line">    <span class="attr">firstName</span>: <span class="string">&#x27;Jonas&#x27;</span>,</span><br><span class="line">    <span class="attr">lastName</span>: <span class="string">&#x27;Schmedtmann&#x27;</span>,</span><br><span class="line">    <span class="attr">age</span>: <span class="number">2037</span> - <span class="number">1991</span>,</span><br><span class="line">    <span class="attr">job</span>: <span class="string">&#x27;teacher&#x27;</span>,</span><br><span class="line">    <span class="attr">friends</span>: [<span class="string">&#x27;Micheal&#x27;</span>, <span class="string">&#x27;Peter&#x27;</span>, <span class="string">&#x27;Steven&#x27;</span>]</span><br><span class="line">&#125;；</span><br></pre></td></tr></table></figure></div>
+<p>对象是JavaScript中最基础的概念(fundamental concept)之一，所以还有很多其它创建对象的方法。</p>
+<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure></div>
+
+<h1 id="3-13-Dot-vs-Bracket-Notation"><a href="#3-13-Dot-vs-Bracket-Notation" class="headerlink" title="3-13 Dot vs. Bracket Notation"></a>3-13 Dot vs. Bracket Notation</h1><div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(jonas.<span class="property">lastName</span>);<span class="comment">//这个‘.’实际上是一个运算符，以&#x27;lastName&#x27;在jonas中检索数据（cleaner and easy to use）</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(jonas[<span class="string">&#x27;lastName&#x27;</span>]);<span class="comment">//[]里的值是灵活的，可以是表达式</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//[]加表达式的方法非常常用，dot不能实现这种效果；</span></span><br><span class="line"><span class="keyword">const</span> nameKey = <span class="string">&#x27;Name&#x27;</span>;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(jonas[<span class="string">&#x27;first&#x27;</span> + nameKey]);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(jonas[<span class="string">&#x27;last&#x27;</span> + nameKey]);</span><br></pre></td></tr></table></figure></div>
+		</div>
+
+		
+		<div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
+			<div class="article-copyright-info-container">
+    <ul>
+        <li><strong>Title:</strong> 【UdemyJS】Session3笔记（共13/20节）</li>
+        <li><strong>Author:</strong> Artificial-Fool</li>
+        <li><strong>Created at
+                :</strong> 2024-11-26 13:14:49</li>
+        
+            <li>
+                <strong>Updated at
+                    :</strong> 2024-11-29 01:08:37
+            </li>
+        
+        <li>
+            <strong>Link:</strong> https://space.bilibili.com/636023121/2024/11/26/UdemyJS-note3/
+        </li>
+        <li>
+            <strong>
+                License:
+            </strong>
+            
+
+            
+                This work is licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0">CC BY-NC-SA 4.0</a>.
+            
+        </li>
+    </ul>
+</div>
+
+		</div>
+		
+
+		
+		<ul class="post-tags-box text-lg mt-1.5 flex-wrap justify-center flex md:hidden">
+			
+			<li class="tag-item mx-0.5">
+				<a href="/tags/UdemyJS/">#UdemyJS</a>&nbsp;
+			</li>
+			
+		</ul>
+		
+
+		
+
+		
+		<div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
+			
+			<div class="article-prev border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+				<a class="prev" rel="prev" href="/2024/12/01/%E7%9A%8E%E6%9C%88%E8%BF%9Enb%EF%BC%81/">
+					<span class="left arrow-icon flex justify-center items-center">
+						<i class="fa-solid fa-chevron-left"></i>
+					</span>
+					<span class="title flex justify-center items-center">
+						<span class="post-nav-title-item">皎月连nb！</span>
+						<span class="post-nav-item">Prev posts</span>
+					</span>
+				</a>
+			</div>
+			
+			
+			<div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+				<a class="next" rel="next" href="/2024/11/23/UdemyJS-note2/">
+					<span class="title flex justify-center items-center">
+						<span class="post-nav-title-item">【UdemyJS】Session2笔记（共24节）</span>
+						<span class="post-nav-item">Next posts</span>
+					</span>
+					<span class="right arrow-icon flex justify-center items-center">
+						<i class="fa-solid fa-chevron-right"></i>
+					</span>
+				</a>
+			</div>
+			
+		</div>
+		
+
+
+		
+		<div class="comment-container px-2 sm:px-6 md:px-8 pb-8">
+			<div class="comments-container mt-10 w-full ">
+    <div id="comment-anchor" class="w-full h-2.5"></div>
+    <div class="comment-area-title w-full my-1.5 md:my-2.5 text-xl md:text-3xl font-bold">
+        Comments
+    </div>
+    
+
+        
+            
+    <div id="waline"></div>
+    <script type="module" data-swup-reload-script>
+      import { init } from '/js/libs/waline.mjs';
+
+      function loadWaline() {
+        init({
+          el: '#waline',
+          serverURL: 'https://waline.sydblog.fun/',
+          lang: 'zh-CN',
+          dark: 'body[class~="dark-mode"]',
+          reaction: false,
+          requiredMeta: ['nick', 'mail'],
+          emoji: [],
+          
+          
+        });
+      }
+
+      if (typeof swup !== 'undefined') {
+        loadWaline();
+      } else {
+        window.addEventListener('DOMContentLoaded', loadWaline);
+      }
+    </script>
+
+
+
+        
+    
+</div>
+
+		</div>
+		
+	</div>
+
+	
+	<div class="toc-content-container">
+		<div class="post-toc-wrap">
+	<div class="post-toc">
+		<div class="toc-title">On this page</div>
+		<div class="page-title">【UdemyJS】Session3笔记（共13/20节）</div>
+		<ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#3-2-Activate-Strict-Mode"><span class="nav-text">3-2 Activate Strict Mode</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-3-unctions"><span class="nav-text">3-3 unctions</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-4-3-5-Function-Declaration-vs-Expressions-vs-Arrow-Functions"><span class="nav-text">3-4 3-5 Function Declaration vs. Expressions vs. Arrow Functions</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-6-Functions-Calling-Other-Functions"><span class="nav-text">3-6 Functions Calling Other Functions</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-7-Reviewing-Functions"><span class="nav-text">3-7 Reviewing Functions</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-8-Coding-Challenge-1"><span class="nav-text">3-8 Coding Challenge #1</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-9-Introduction-to-Arrays"><span class="nav-text">3-9 Introduction to Arrays</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-10-Basic-Array-Operations-Methods"><span class="nav-text">3-10 Basic Array Operations (Methods)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-11-Coding-Challenge-2"><span class="nav-text">3-11 Coding Challenge #2</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-12-Introduction-to-Objects"><span class="nav-text">3-12 Introduction to Objects</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-13-Dot-vs-Bracket-Notation"><span class="nav-text">3-13 Dot vs. Bracket Notation</span></a></li></ol>
+
+	</div>
+</div>
+	</div>
+	
+</div>
+			</div>
+
+			
+		</div>
+
+		<div class="main-content-footer">
+			<footer class="footer mt-5 py-5 h-auto text-base text-third-text-color relative border-t-2 border-t-border-color">
+    <div class="info-container py-3 text-center">
+        
+        <div class="text-center">
+            &copy;
+            
+              <span>2024</span>
+              -
+            
+            2024&nbsp;&nbsp;<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>&nbsp;&nbsp;<a href="/">Artificial-Fool</a>
+            
+                
+                <p class="post-count space-x-0.5">
+                    <span>
+                        6 posts in total
+                    </span>
+                    
+                </p>
+            
+        </div>
+        
+            <script data-swup-reload-script src="https://cn.vercount.one/js"></script>
+            <div class="relative text-center lg:absolute lg:right-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-right">
+                
+                    <span id="busuanzi_container_site_uv" class="lg:!block">
+                        <span class="text-sm">VISITOR COUNT</span>
+                        <span id="busuanzi_value_site_uv"></span>
+                    </span>
+                
+                
+                    <span id="busuanzi_container_site_pv" class="lg:!block">
+                        <span class="text-sm">TOTAL PAGE VIEWS</span>
+                        <span id="busuanzi_value_site_pv"></span>
+                    </span>
+                
+            </div>
+        
+        <div class="relative text-center lg:absolute lg:left-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-left">
+            <span class="lg:block text-sm">POWERED BY <?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg class="relative top-[2px] inline-block align-baseline" version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1rem" height="1rem" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path fill="#0E83CD" d="M256.4,25.8l-200,115.5L56,371.5l199.6,114.7l200-115.5l0.4-230.2L256.4,25.8z M349,354.6l-18.4,10.7l-18.6-11V275H200v79.6l-18.4,10.7l-18.6-11v-197l18.5-10.6l18.5,10.8V237h112v-79.6l18.5-10.6l18.5,10.8V354.6z"/></svg><a target="_blank" class="text-base" href="https://hexo.io">Hexo</a></span>
+            <span class="text-sm lg:block">THEME&nbsp;<a class="text-base" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v2.8.0</a></span>
+        </div>
+        
+        
+            <div>
+                Blog up for <span class="odometer" id="runtime_days" ></span> days <span class="odometer" id="runtime_hours"></span> hrs <span class="odometer" id="runtime_minutes"></span> Min <span class="odometer" id="runtime_seconds"></span> Sec
+            </div>
+        
+        
+            <script data-swup-reload-script>
+                try {
+                    function odometer_init() {
+                    const elements = document.querySelectorAll('.odometer');
+                    elements.forEach(el => {
+                        new Odometer({
+                            el,
+                            format: '( ddd).dd',
+                            duration: 200
+                        });
+                    });
+                    }
+                    odometer_init();
+                } catch (error) {}
+            </script>
+        
+        
+        
+    </div>  
+</footer>
+		</div>
+	</div>
+
+	
+	<div class="post-tools">
+		<div class="post-tools-container">
+	<ul class="article-tools-list">
+		<!-- TOC aside toggle -->
+		
+		<li class="right-bottom-tools page-aside-toggle">
+			<i class="fa-regular fa-outdent"></i>
+		</li>
+		
+
+		<!-- go comment -->
+		
+		<li class="go-comment">
+			<i class="fa-regular fa-comments"></i>
+		</li>
+		
+	</ul>
+</div>
+	</div>
+	
+
+	<div class="right-side-tools-container">
+		<div class="side-tools-container">
+	<ul class="hidden-tools-list">
+		<li class="right-bottom-tools tool-font-adjust-plus flex justify-center items-center">
+			<i class="fa-regular fa-magnifying-glass-plus"></i>
+		</li>
+
+		<li class="right-bottom-tools tool-font-adjust-minus flex justify-center items-center">
+			<i class="fa-regular fa-magnifying-glass-minus"></i>
+		</li>
+
+		<li class="right-bottom-tools tool-dark-light-toggle flex justify-center items-center">
+			<i class="fa-regular fa-moon"></i>
+		</li>
+
+		<!-- rss -->
+		
+
+		
+
+		<li class="right-bottom-tools tool-scroll-to-bottom flex justify-center items-center">
+			<i class="fa-regular fa-arrow-down"></i>
+		</li>
+	</ul>
+
+	<ul class="visible-tools-list">
+		<li class="right-bottom-tools toggle-tools-list flex justify-center items-center">
+			<i class="fa-regular fa-cog fa-spin"></i>
+		</li>
+		
+		<li class="right-bottom-tools tool-scroll-to-top flex justify-center items-center">
+			<i class="arrow-up fas fa-arrow-up"></i>
+			<span class="percent"></span>
+		</li>
+		
+		
+	</ul>
+</div>
+	</div>
+
+	<div class="image-viewer-container">
+	<img src="">
+</div>
+
+	
+
+</main>
+
+
+
+<script src="/build/js/libs/Swup.min.js"></script>
+
+<script src="/build/js/libs/SwupSlideTheme.min.js"></script>
+
+<script src="/build/js/libs/SwupScriptsPlugin.min.js"></script>
+
+<script src="/build/js/libs/SwupProgressPlugin.min.js"></script>
+
+<script src="/build/js/libs/SwupScrollPlugin.min.js"></script>
+
+<script src="/build/js/libs/SwupPreloadPlugin.min.js"></script>
+
+<script>
+    const swup = new Swup({
+        plugins: [
+            new SwupScriptsPlugin({
+                optin: true,
+            }),
+            new SwupProgressPlugin(),
+            new SwupScrollPlugin({
+                offset: 80,
+            }),
+            new SwupSlideTheme({
+                mainElement: ".main-content-body",
+            }),
+            new SwupPreloadPlugin(),
+        ],
+        containers: ["#swup"],
+    });
+</script>
+
+
+
+
+			
+<script src="/build/js/tools/imageViewer.js" type="module"></script>
+
+<script src="/build/js/utils.js" type="module"></script>
+
+<script src="/build/js/main.js" type="module"></script>
+
+<script src="/build/js/layouts/navbarShrink.js" type="module"></script>
+
+<script src="/build/js/tools/scrollTopBottom.js" type="module"></script>
+
+<script src="/build/js/tools/lightDarkSwitch.js" type="module"></script>
+
+<script src="/build/js/layouts/categoryList.js" type="module"></script>
+
+
+
+
+
+    
+<script src="/build/js/tools/codeBlock.js" type="module"></script>
+
+
+
+
+    
+<script src="/build/js/layouts/lazyload.js" type="module"></script>
+
+
+
+
+    
+<script src="/build/js/tools/runtime.js"></script>
+
+    
+<script src="/build/js/libs/odometer.min.js"></script>
+
+    
+<link rel="stylesheet" href="/assets/odometer-theme-minimal.css">
+
+
+
+
+  
+<script src="/build/js/libs/Typed.min.js"></script>
+
+  
+<script src="/build/js/plugins/typed.js" type="module"></script>
+
+
+
+
+
+
+
+
+    
+<script src="/build/js/libs/anime.min.js"></script>
+
+
+
+
+
+    
+<script src="/build/js/tools/tocToggle.js" type="module" data-swup-reload-script=""></script>
+
+<script src="/build/js/layouts/toc.js" type="module" data-swup-reload-script=""></script>
+
+<script src="/build/js/plugins/tabs.js" type="module" data-swup-reload-script=""></script>
+
+
+
+
+<script src="/build/js/libs/moment-with-locales.min.js" data-swup-reload-script=""></script>
+
+
+<script src="/build/js/layouts/essays.js" type="module" data-swup-reload-script=""></script>
+
+
+
+
+
+				
+	</body>
+
+</html>
