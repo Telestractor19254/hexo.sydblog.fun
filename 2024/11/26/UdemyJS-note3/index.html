@@ -20,7 +20,7 @@
     
         <meta name="description" content="3-2 Activate Strict Mode1234567&#x27;use strict&#x27;;&#x2F;&#x2F;必须在文件的第一行let hasDriversLicense&#x3D;false;const passTest&#x3D;true;if(passTest) hasDriverLicense&#x3D;true; &#x2F;&#x2F;此处打错变量名;if（hasDriversLicense）console.log(&#x27;I">
 <meta property="og:type" content="article">
-<meta property="og:title" content="【UdemyJS】Session3笔记（共20节）">
+<meta property="og:title" content="【UdemyJS】Section3笔记（共20节）">
 <meta property="og:url" content="http://example.com/2024/11/26/UdemyJS-note3/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="3-2 Activate Strict Mode1234567&#x27;use strict&#x27;;&#x2F;&#x2F;必须在文件的第一行let hasDriversLicense&#x3D;false;const passTest&#x3D;true;if(passTest) hasDriverLicense&#x3D;true; &#x2F;&#x2F;此处打错变量名;if（hasDriversLicense）console.log(&#x27;I">
@@ -29,7 +29,7 @@
 <meta property="og:image" content="http://example.com/img/1732707014746.png">
 <meta property="og:image" content="http://example.com/img/1732707364647.png">
 <meta property="article:published_time" content="2024-11-26T05:14:49.000Z">
-<meta property="article:modified_time" content="2024-12-02T19:18:45.951Z">
+<meta property="article:modified_time" content="2024-12-06T01:11:48.539Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="UdemyJS">
 <meta name="twitter:card" content="summary">
@@ -45,7 +45,7 @@
     
     <title>
         
-            【UdemyJS】Session3笔记（共20节） | Syd&#39;s Blog
+            【UdemyJS】Section3笔记（共20节） | Syd&#39;s Blog
         
     </title>
 
@@ -306,11 +306,11 @@
         <div class="label text-third-text-color text-sm">Tags</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/categories">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">1</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">2</div>
         <div class="label text-third-text-color text-sm">Categories</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">6</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">7</div>
         <div class="label text-third-text-color text-sm">Posts</div>
     </a>
 </div>
@@ -333,7 +333,7 @@
 		<div class="article-title relative w-full">
 			
 			<div class="w-full flex items-center pt-6 justify-start">
-				<h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3">【UdemyJS】Session3笔记（共20节）</h1>
+				<h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3">【UdemyJS】Section3笔记（共20节）</h1>
 			</div>
 			
 		</div>
@@ -361,8 +361,8 @@
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2024-12-03 03:18:45</span>
-            <span class="mobile">2024-12-03 03:18:45</span>
+            <span class="desktop">2024-12-06 09:11:48</span>
+            <span class="mobile">2024-12-06 09:11:48</span>
             <span class="hover-info">Updated</span>
         </span>
     
@@ -419,7 +419,7 @@
 			<h1 id="3-2-Activate-Strict-Mode"><a href="#3-2-Activate-Strict-Mode" class="headerlink" title="3-2 Activate Strict Mode"></a>3-2 Activate Strict Mode</h1><div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&#x27;use strict&#x27;</span>;<span class="comment">//必须在文件的第一行</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> hasDriversLicense=<span class="literal">false</span>;</span><br><span class="line"><span class="keyword">const</span> passTest=<span class="literal">true</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span>(passTest) hasDriverLicense=<span class="literal">true</span>; <span class="comment">//此处打错变量名;</span></span><br><span class="line"><span class="keyword">if</span>（hasDriversLicense）<span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;I can drive:D&#x27;</span>):</span><br></pre></td></tr></table></figure></div>
 <p>当严格模式未激活时，该程序不会报错也不会输出，因为原变量hasDriver<strong>s</strong>License未被改变，反而而生成了一个新的变量hasDriverLicense;<br>当严格模式激活时，在hasDriverLicense处会直接报错defined,从而避免意料之外的bug。</p>
 <p>严格模式还会禁止使用预留词汇定义变量等。启用严格模式能帮助我们编写更安全的代码。</p>
-<h1 id="3-3-unctions"><a href="#3-3-unctions" class="headerlink" title="3-3 unctions"></a>3-3 unctions</h1><p>Functions就像变量，都是一个有名字的盒子，只不过变量里面储存的是值，而函数储存的是语句。由于太熟悉了就不做笔记了。<br><em>Don’t repeat youself.</em></p>
+<h1 id="3-3-Functions"><a href="#3-3-Functions" class="headerlink" title="3-3 Functions"></a>3-3 Functions</h1><p>Functions就像变量，都是一个有名字的盒子，只不过变量里面储存的是值，而函数储存的是语句。由于太熟悉了就不做笔记了。<br><em>Don’t repeat youself.</em></p>
 <h1 id="3-4-3-5-Function-Declaration-vs-Expressions-vs-Arrow-Functions"><a href="#3-4-3-5-Function-Declaration-vs-Expressions-vs-Arrow-Functions" class="headerlink" title="3-4 3-5 Function Declaration vs. Expressions vs. Arrow Functions"></a>3-4 3-5 Function Declaration vs. Expressions vs. Arrow Functions</h1><p>函数声明 &amp; 函数表达式 &amp; 箭头函数</p>
 <p><em><strong>function Name(){}</strong></em> 是最常用的函数定义方式，即函数声明;</p>
 <div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Function declaration</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">calcAge1</span>(<span class="params">birthYeah</span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="number">2037</span> - birthYeah;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">const</span> age1 = <span class="title function_">calcAge1</span>(<span class="number">1991</span>);<span class="comment">// calling / running / invoking a function</span></span><br><span class="line"><span class="comment">//普通函数声明可以在定义前被调用（hoisting）</span></span><br></pre></td></tr></table></figure></div>
@@ -504,21 +504,35 @@
 <blockquote>
 <p>2024&#x2F;12&#x2F;3 3:18</p>
 </blockquote>
-<h1 id="3-18-Looping-Backwards-and-Loops-in-Loops"><a href="#3-18-Looping-Backwards-and-Loops-in-Loops" class="headerlink" title="3-18 Looping Backwards and Loops in Loops"></a>3-18 Looping Backwards and Loops in Loops</h1><h1 id="3-19-The-while-Loop"><a href="#3-19-The-while-Loop" class="headerlink" title="3-19 The while Loop"></a>3-19 The while Loop</h1><h1 id="3-20-Coding-Challenge-4"><a href="#3-20-Coding-Challenge-4" class="headerlink" title="3-20 Coding Challenge #4"></a>3-20 Coding Challenge #4</h1>
+<h1 id="3-18-Looping-Backwards-and-Loops-in-Loops"><a href="#3-18-Looping-Backwards-and-Loops-in-Loops" class="headerlink" title="3-18 Looping Backwards and Loops in Loops"></a>3-18 Looping Backwards and Loops in Loops</h1><p>倒着循环。</p>
+<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> arrayList = [<span class="string">&quot;qwe&quot;</span>, <span class="string">&quot;rty&quot;</span>, <span class="string">&quot;uio&quot;</span>, <span class="string">&quot;asd&quot;</span>, <span class="string">&quot;fgh&quot;</span>, <span class="string">&quot;jkl&quot;</span>];</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> i = arrayList.<span class="property">length</span> - <span class="number">1</span>; i &gt;= <span class="number">0</span>; i--) &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(i, arrayList[i]);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<h1 id="3-19-The-while-Loop"><a href="#3-19-The-while-Loop" class="headerlink" title="3-19 The while Loop"></a>3-19 The while Loop</h1><p>while用于不确定次数的循环，比如掷骰子。<br>用for掷出1000次骰子:（bushi</p>
+<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> dice;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; <span class="number">1000</span>; i++) &#123;</span><br><span class="line">    dice = <span class="title class_">Math</span>.<span class="title function_">trunc</span>(<span class="title class_">Math</span>.<span class="title function_">random</span>() * <span class="number">6</span>) + <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">if</span> (dice != <span class="number">6</span>) &#123;</span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">`You rolled a <span class="subst">$&#123;dice&#125;</span>`</span>);</span><br><span class="line">        <span class="title function_">alert</span>(<span class="string">`You rolled a <span class="subst">$&#123;dice&#125;</span>`</span>);</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">`You got <span class="subst">$&#123;dice&#125;</span> within <span class="subst">$&#123;i + <span class="number">1</span>&#125;</span> roll(s)!`</span>);</span><br><span class="line">        <span class="title function_">alert</span>(<span class="string">`Congratulation! You got <span class="subst">$&#123;dice&#125;</span> within <span class="subst">$&#123;i + <span class="number">1</span>&#125;</span> roll(s)!`</span>)</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+<p>不对不对，我们这节学while。</p>
+<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> dice = <span class="title class_">Math</span>.<span class="title function_">trunc</span>(<span class="title class_">Math</span>.<span class="title function_">random</span>() * <span class="number">6</span>) + <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> (dice !== <span class="number">6</span>) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">`You rolled a <span class="subst">$&#123;dice&#125;</span>`</span>);</span><br><span class="line">  dice = <span class="title class_">Math</span>.<span class="title function_">trunc</span>(<span class="title class_">Math</span>.<span class="title function_">random</span>() * <span class="number">6</span>) + <span class="number">1</span>;</span><br><span class="line">  <span class="keyword">if</span> (dice === <span class="number">6</span>) <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;Loop is about to end...&#x27;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+<p>总之，学了两个Math方法，**Math.random()<strong>产生一个0.几的浮点数，</strong>Math.trunc()**向下取整。<br>Move on to the next episode.</p>
+<h1 id="3-20-Coding-Challenge-4"><a href="#3-20-Coding-Challenge-4" class="headerlink" title="3-20 Coding Challenge #4"></a>3-20 Coding Challenge #4</h1><p>发现之前已经做过了。。哈哈哈（<br>直接做bonus：</p>
+<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> test = [<span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>];</span><br><span class="line"><span class="keyword">const</span> bills = [<span class="number">22</span>, <span class="number">295</span>, <span class="number">176</span>, <span class="number">440</span>, <span class="number">37</span>, <span class="number">105</span>, <span class="number">10</span>, <span class="number">1100</span>, <span class="number">86</span>, <span class="number">52</span>];</span><br><span class="line"><span class="keyword">const</span> tips = [];</span><br><span class="line"><span class="keyword">const</span> totals = [];</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> calcTip = <span class="keyword">function</span> (<span class="params">bills</span>) &#123;</span><br><span class="line">    <span class="keyword">let</span> tip;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; bills.<span class="property">length</span>; i++) &#123;</span><br><span class="line">        tip = bills[i] &gt;= <span class="number">50</span> &amp;&amp; bills[i] &lt;= <span class="number">300</span> ? bills[i] * <span class="number">0.15</span> : bills[i] * <span class="number">0.2</span>;</span><br><span class="line">        tips.<span class="title function_">push</span>(tip);</span><br><span class="line">        totals.<span class="title function_">push</span>(tip + bills[i]);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> calcAverage = <span class="keyword">function</span> (<span class="params">arr</span>) &#123;</span><br><span class="line">    <span class="keyword">let</span> total = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; arr.<span class="property">length</span>; i++) &#123;</span><br><span class="line">        total = total + arr[i];</span><br><span class="line">    &#125;;</span><br><span class="line">    <span class="keyword">return</span> total / arr.<span class="property">length</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="title function_">calcTip</span>(bills);</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title function_">calcAverage</span>(test),<span class="title function_">calcAverage</span>(bills),<span class="title function_">calcAverage</span>(tips),<span class="title function_">calcAverage</span>(totals));</span><br></pre></td></tr></table></figure></div>
+<p>至此完成了整个课程的Fundamental Part。</p>
+<blockquote>
+<p>2024&#x2F;12&#x2F;6 3:30 Chapter3 Concluded.</p>
+</blockquote>
+
 		</div>
 
 		
 		<div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
 			<div class="article-copyright-info-container">
     <ul>
-        <li><strong>Title:</strong> 【UdemyJS】Session3笔记（共20节）</li>
+        <li><strong>Title:</strong> 【UdemyJS】Section3笔记（共20节）</li>
         <li><strong>Author:</strong> Artificial-Fool</li>
         <li><strong>Created at
                 :</strong> 2024-11-26 13:14:49</li>
         
             <li>
                 <strong>Updated at
-                    :</strong> 2024-12-03 03:18:45
+                    :</strong> 2024-12-06 09:11:48
             </li>
         
         <li>
@@ -571,7 +585,7 @@
 			<div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
 				<a class="next" rel="next" href="/2024/11/23/UdemyJS-note2/">
 					<span class="title flex justify-center items-center">
-						<span class="post-nav-title-item">【UdemyJS】Session2笔记（共24节）</span>
+						<span class="post-nav-title-item">【UdemyJS】Section2笔记（共24节）</span>
 						<span class="post-nav-item">Next posts</span>
 					</span>
 					<span class="right arrow-icon flex justify-center items-center">
@@ -635,8 +649,8 @@
 		<div class="post-toc-wrap">
 	<div class="post-toc">
 		<div class="toc-title">On this page</div>
-		<div class="page-title">【UdemyJS】Session3笔记（共20节）</div>
-		<ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#3-2-Activate-Strict-Mode"><span class="nav-text">3-2 Activate Strict Mode</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-3-unctions"><span class="nav-text">3-3 unctions</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-4-3-5-Function-Declaration-vs-Expressions-vs-Arrow-Functions"><span class="nav-text">3-4 3-5 Function Declaration vs. Expressions vs. Arrow Functions</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-6-Functions-Calling-Other-Functions"><span class="nav-text">3-6 Functions Calling Other Functions</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-7-Reviewing-Functions"><span class="nav-text">3-7 Reviewing Functions</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-8-Coding-Challenge-1"><span class="nav-text">3-8 Coding Challenge #1</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-9-Introduction-to-Arrays"><span class="nav-text">3-9 Introduction to Arrays</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-10-Basic-Array-Operations-Methods"><span class="nav-text">3-10 Basic Array Operations (Methods)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-11-Coding-Challenge-2"><span class="nav-text">3-11 Coding Challenge #2</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-12-Introduction-to-Objects"><span class="nav-text">3-12 Introduction to Objects</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-13-Dot-vs-Bracket-Notation"><span class="nav-text">3-13 Dot vs. Bracket Notation</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-14-Object-Methods"><span class="nav-text">3-14 Object Methods</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E5%BC%95%E5%85%A5%EF%BC%9A%E5%90%91%E5%AF%B9%E8%B1%A1%EF%BC%88Objects%EF%BC%89%E4%B8%AD%E6%B7%BB%E5%8A%A0%E5%87%BD%E6%95%B0%EF%BC%88Functions%EF%BC%89"><span class="nav-text">1.引入：向对象（Objects）中添加函数（Functions）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E5%BB%B6%E4%BC%B8%EF%BC%9A%E6%96%B9%E6%B3%95%E7%9A%84%E2%80%99this%E2%80%99%E5%B1%9E%E6%80%A7"><span class="nav-text">2.延伸：方法的’this’属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E8%BF%9B%E9%98%B6%EF%BC%9A%E5%AE%9A%E4%B9%89%E6%96%B0%E5%B1%9E%E6%80%A7age%E9%98%B2%E6%AD%A2%E9%87%8D%E5%A4%8D%E8%AE%A1%E7%AE%97"><span class="nav-text">3.进阶：定义新属性age防止重复计算</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E6%8C%91%E6%88%98%EF%BC%9A%E5%90%88%E6%88%90%E5%AD%97%E7%AC%A6%E4%B8%B2-%E4%BD%86%E6%98%AF%E7%94%A8method"><span class="nav-text">4.挑战：合成字符串(但是用method)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-%E5%B0%BE%E5%A3%B0-%E8%A1%A5%E5%85%85-Array%E5%AE%9E%E9%99%85%E4%B8%8A%E4%B9%9F%E6%98%AFObject"><span class="nav-text">5.尾声&#x2F;补充: Array实际上也是Object</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-16-Iteration-The-for-Loop"><span class="nav-text">3-16 Iteration_ The for Loop</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-17-Looping-Arrays-Breaking-and-Continuing"><span class="nav-text">3-17 Looping Arrays, Breaking and Continuing</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-18-Looping-Backwards-and-Loops-in-Loops"><span class="nav-text">3-18 Looping Backwards and Loops in Loops</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-19-The-while-Loop"><span class="nav-text">3-19 The while Loop</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-20-Coding-Challenge-4"><span class="nav-text">3-20 Coding Challenge #4</span></a></li></ol>
+		<div class="page-title">【UdemyJS】Section3笔记（共20节）</div>
+		<ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#3-2-Activate-Strict-Mode"><span class="nav-text">3-2 Activate Strict Mode</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-3-Functions"><span class="nav-text">3-3 Functions</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-4-3-5-Function-Declaration-vs-Expressions-vs-Arrow-Functions"><span class="nav-text">3-4 3-5 Function Declaration vs. Expressions vs. Arrow Functions</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-6-Functions-Calling-Other-Functions"><span class="nav-text">3-6 Functions Calling Other Functions</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-7-Reviewing-Functions"><span class="nav-text">3-7 Reviewing Functions</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-8-Coding-Challenge-1"><span class="nav-text">3-8 Coding Challenge #1</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-9-Introduction-to-Arrays"><span class="nav-text">3-9 Introduction to Arrays</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-10-Basic-Array-Operations-Methods"><span class="nav-text">3-10 Basic Array Operations (Methods)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-11-Coding-Challenge-2"><span class="nav-text">3-11 Coding Challenge #2</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-12-Introduction-to-Objects"><span class="nav-text">3-12 Introduction to Objects</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-13-Dot-vs-Bracket-Notation"><span class="nav-text">3-13 Dot vs. Bracket Notation</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-14-Object-Methods"><span class="nav-text">3-14 Object Methods</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E5%BC%95%E5%85%A5%EF%BC%9A%E5%90%91%E5%AF%B9%E8%B1%A1%EF%BC%88Objects%EF%BC%89%E4%B8%AD%E6%B7%BB%E5%8A%A0%E5%87%BD%E6%95%B0%EF%BC%88Functions%EF%BC%89"><span class="nav-text">1.引入：向对象（Objects）中添加函数（Functions）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E5%BB%B6%E4%BC%B8%EF%BC%9A%E6%96%B9%E6%B3%95%E7%9A%84%E2%80%99this%E2%80%99%E5%B1%9E%E6%80%A7"><span class="nav-text">2.延伸：方法的’this’属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E8%BF%9B%E9%98%B6%EF%BC%9A%E5%AE%9A%E4%B9%89%E6%96%B0%E5%B1%9E%E6%80%A7age%E9%98%B2%E6%AD%A2%E9%87%8D%E5%A4%8D%E8%AE%A1%E7%AE%97"><span class="nav-text">3.进阶：定义新属性age防止重复计算</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E6%8C%91%E6%88%98%EF%BC%9A%E5%90%88%E6%88%90%E5%AD%97%E7%AC%A6%E4%B8%B2-%E4%BD%86%E6%98%AF%E7%94%A8method"><span class="nav-text">4.挑战：合成字符串(但是用method)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-%E5%B0%BE%E5%A3%B0-%E8%A1%A5%E5%85%85-Array%E5%AE%9E%E9%99%85%E4%B8%8A%E4%B9%9F%E6%98%AFObject"><span class="nav-text">5.尾声&#x2F;补充: Array实际上也是Object</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-16-Iteration-The-for-Loop"><span class="nav-text">3-16 Iteration_ The for Loop</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-17-Looping-Arrays-Breaking-and-Continuing"><span class="nav-text">3-17 Looping Arrays, Breaking and Continuing</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-18-Looping-Backwards-and-Loops-in-Loops"><span class="nav-text">3-18 Looping Backwards and Loops in Loops</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-19-The-while-Loop"><span class="nav-text">3-19 The while Loop</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-20-Coding-Challenge-4"><span class="nav-text">3-20 Coding Challenge #4</span></a></li></ol>
 
 	</div>
 </div>
@@ -663,7 +677,7 @@
                 
                 <p class="post-count space-x-0.5">
                     <span>
-                        6 posts in total
+                        7 posts in total
                     </span>
                     
                 </p>

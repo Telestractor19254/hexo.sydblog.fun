@@ -13,18 +13,26 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="http://example.com/"/>
+    <link rel="canonical" href="http://example.com/2024/12/06/udemyjs-note5/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     
-        <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
+        <meta name="description" content="5-2 Setting up Prettier and VS Code 当前文件夹下添加.prettierrc 文件来配置 Prettier.Prettier 官方文档：https:&#x2F;&#x2F;prettier.io&#x2F;docs&#x2F;en&#x2F;options  VS Code 中 File &gt; Preferences &gt; Configure Snippets 来自定义快捷短语。  TODO Highli">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【UdemyJS】Section5笔记（共9节）">
+<meta property="og:url" content="http://example.com/2024/12/06/UdemyJS-note5/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="5-2 Setting up Prettier and VS Code 当前文件夹下添加.prettierrc 文件来配置 Prettier.Prettier 官方文档：https:&#x2F;&#x2F;prettier.io&#x2F;docs&#x2F;en&#x2F;options  VS Code 中 File &gt; Preferences &gt; Configure Snippets 来自定义快捷短语。  TODO Highli">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/img/1.png">
+<meta property="og:image" content="http://example.com/img/2.png">
+<meta property="article:published_time" content="2024-12-05T19:46:53.000Z">
+<meta property="article:modified_time" content="2024-12-06T10:19:00.517Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="UdemyJS">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/1.png">
     
     
     <!--- Icon Part-->
@@ -36,7 +44,7 @@
     
     <title>
         
-            Syd&#39;s Blog - Trying to be insteresting.
+            【UdemyJS】Section5笔记（共9节） | Syd&#39;s Blog
         
     </title>
 
@@ -139,74 +147,17 @@
 <main class="page-container" id="swup">
 
 	
-	
-    <style>
-        .home-banner-container {
-            background: none !important;
-        }
-        .home-article-item,
-        .sidebar-links,
-        .sidebar-content,
-        a.page-number,
-        a.extend,
-        .sidebar-links .links:hover,
-        .right-bottom-tools,
-        footer.footer {
-            background-color: var(--background-color-transparent-80) !important;
-        }
-        .right-bottom-tools:hover,
-        a.page-number:hover,
-        a.extend:hover {
-            background-color: var(--primary-color) !important;
-        }
-        .site-info,
-        .home-article-sticky-label {
-            background-color: var(--background-color-transparent-15) !important;
-        }
-        .home-article-sticky-label {
-            backdrop-filter: none !important;
-        }
-    </style>
-    <div class="home-banner-background transition-fade fixed top-0 left-0 w-screen h-screen scale-125 sm:scale-110 box-border will-change-transform bg-cover">
-        <img src="/images/wallhaven-wqery6-light.webp" alt="home-banner-background" class="w-full h-full object-cover dark:hidden">
-        <img src="/images/wallhaven-wqery6-dark.webp" alt="home-banner-background" class="w-full h-full object-cover hidden dark:block">
-    </div>
-
-
-<div class="home-banner-container flex justify-center items-center transition-fade relative">
-    
-    <div class="content mt-8 flex flex-col justify-center items-center transition-fade-down">
-        <div class="description flex flex-col justify-center items-center w-screen font-medium text-center"
-        
-        >
-            Artificial-Fool
-            
-            
-                <p><i id="subtitle"></i></p>
-            
-        </div>
-        
-    </div>
-    <script>
-        const scrollToMain = ()=> {
-            console.log('scroll');
-            const target = document.querySelector('.main-content-container');
-            target.scrollIntoView({ behavior: 'smooth'});
-        }
-    </script>
-</div>
-	
 
 	<div class="main-content-container flex flex-col justify-between min-h-dvh">
 		<div class="main-content-header">
 			<header class="navbar-container px-6 md:px-12">
-    <div class="navbar-content transition-navbar has-home-banner">
+    <div class="navbar-content transition-navbar ">
         <div class="left">
             
             <a class="logo-title" href="/">
-                <h1>
+                
                 Syd&#39;s Blog
-                </h1>
+                
             </a>
         </div>
 
@@ -220,7 +171,7 @@
 
                             <li class="navbar-item">
                                 <!-- Menu -->
-                                <a class="active"
+                                <a class=""
                                    href="/"
                                         >
                                     <i class="fa-regular fa-house fa-fw"></i>
@@ -288,7 +239,7 @@
 
                     <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
                         
-                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full active"
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
                            href="/"
                         >
                             <span>
@@ -373,85 +324,51 @@
 
 		<div class="main-content-body transition-fade-up">
 			
-			<div class="home-sidebar-container">
-    <div class="sticky-container sticky">
-        
-        
-            
-            <div class="sidebar-content" >
-                <div class="avatar flex justify-center">
-    <img src="/images/4b020f8ed73749dac4750629821699a3cd0408cd.jpg">
-</div>
-                <div class="author flex flex-col justify-center my-2.5 mx-0">
-    <div class="name">Artificial-Fool</div>
-    
-        <div class="label">Lv1</div>
-    
-</div>
-                <div class="statistics flex justify-around my-2.5">
-    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/tags">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">1</div>
-        <div class="label text-third-text-color text-sm">Tags</div>
-    </a>
-    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/categories">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">2</div>
-        <div class="label text-third-text-color text-sm">Categories</div>
-    </a>
-    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">7</div>
-        <div class="label text-third-text-color text-sm">Posts</div>
-    </a>
-</div>
-            </div>
-        
-
-    </div>
-</div>
-
-			
 
 			<div class="main-content">
-				<div class="home-content-container">
-    <ul class="home-article-list">
-        
-            <li class="home-article-item">
+				<div class="post-page-container flex relative justify-between box-border w-full h-full">
+	<div class="article-content-container">
 
-                
+		<div class="article-title relative w-full">
+			
+			<div class="w-full flex items-center pt-6 justify-start">
+				<h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3">【UdemyJS】Section5笔记（共9节）</h1>
+			</div>
+			
+		</div>
 
-                
-
-                
-                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
-                    <h3 class="home-article-title">
-                        <a href="/2024/12/06/UdemyJS-note5/">
-                            【UdemyJS】Section5笔记（共9节）
-                        </a>
-                    </h3>
-
-                    <div class="home-article-content markdown-body">
-                        
-                            
-                            5-2 Setting up Prettier and VS Code
-当前文件夹下添加.prettierrc 文件来配置 Prettier.Prettier 官方文档：https://prettier.io/docs/en/options
-
-VS Code 中 File &gt; Preferences &gt; Configure Snippets 来自定义快捷短语。
-
-TODO Hig...
-                        
-                    </div>
-
-                    <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Fri Dec 06 2024 03:46:53 GMT+0800">
-                
-                    2024-12-06
-                
-            </span>
+		
+		<div class="article-header flex flex-row gap-2 items-center px-2 sm:px-6 md:px-8">
+			<div class="avatar w-[46px] h-[46px] flex-shrink-0 rounded-medium border border-border-color p-[1px]">
+				<img src="/images/4b020f8ed73749dac4750629821699a3cd0408cd.jpg">
+			</div>
+			<div class="info flex flex-col justify-between">
+				<div class="author flex items-center">
+					<span class="name text-default-text-color text-lg font-semibold">Artificial-Fool</span>
+					
+					<span class="author-label ml-1.5 text-xs px-2 py-0.5 rounded-small text-third-text-color border border-shadow-color-1">Lv1</span>
+					
+				</div>
+				<div class="meta-info">
+					<div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
+        <span class="desktop">2024-12-06 03:46:53</span>
+        <span class="mobile">2024-12-06 03:46:53</span>
+        <span class="hover-info">Created</span>
+    </span>
+    
+        <span class="article-date article-meta-item">
+            <i class="fa-regular fa-wrench"></i>&nbsp;
+            <span class="desktop">2024-12-06 18:19</span>
+            <span class="mobile">2024-12-06 18:19</span>
+            <span class="hover-info">Updated</span>
         </span>
-        
-            <span class="home-article-category">
-                <i class="fa-solid fa-folders"></i>&nbsp;
+    
+
+    
+        <span class="article-categories article-meta-item">
+            <i class="fa-regular fa-folders"></i>&nbsp;
             <ul>
                 
                 
@@ -465,413 +382,208 @@ TODO Hig...
                 
             </ul>
         </span>
-        
-        
-            <span class="home-article-tag">
-                <i class="fa-solid fa-tags"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/tags/UdemyJS/">UdemyJS</a>&nbsp;
-                        </li>
-                    
-                </ul>
-            </span>
-        
-    </div>
-
-    <a href="/2024/12/06/UdemyJS-note5/">Read more<span class="seo-reader-text">【UdemyJS】Section5笔记（共9节）</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                
-
-                
-                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
-                    <h3 class="home-article-title">
-                        <a href="/2024/12/06/UdemyJS-note4/">
-                            【UdemyJS】Section4笔记（共1节）
-                        </a>
-                    </h3>
-
-                    <div class="home-article-content markdown-body">
-                        
-                            
-                            基础完结，规划学习路线。https://www.bilibili.com/video/BV1CL411o7kH?spm_id_from=333.788.videopod.episodes&amp;vd_source=92d002f2a83055285e0997084974a16a&amp;p=48 
-
-                        
-                    </div>
-
-                    <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Fri Dec 06 2024 03:32:32 GMT+0800">
-                
-                    2024-12-06
-                
-            </span>
-        </span>
-        
-            <span class="home-article-category">
-                <i class="fa-solid fa-folders"></i>&nbsp;
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fa-regular fa-tags"></i>&nbsp;
             <ul>
                 
-                
-                    
-                        
-                        <li>
-                            <a href="/categories/notes/">notes</a>&nbsp;
-                        </li>
-                    
-                    
+                    <li>
+                        <a href="/tags/UdemyJS/">UdemyJS</a>&nbsp;
+                    </li>
                 
             </ul>
         </span>
-        
-        
-            <span class="home-article-tag">
-                <i class="fa-solid fa-tags"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/tags/UdemyJS/">UdemyJS</a>&nbsp;
-                        </li>
-                    
-                </ul>
-            </span>
-        
-    </div>
+    
 
-    <a href="/2024/12/06/UdemyJS-note4/">Read more<span class="seo-reader-text">【UdemyJS】Section4笔记（共1节）</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+    
+    
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fa-regular fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
+    
 </div>
 
-                </div>
+				</div>
+			</div>
+		</div>
+		
+
+		
+
+
+		<div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
+			<h1 id="5-2-Setting-up-Prettier-and-VS-Code"><a href="#5-2-Setting-up-Prettier-and-VS-Code" class="headerlink" title="5-2 Setting up Prettier and VS Code"></a>5-2 Setting up Prettier and VS Code</h1><ol>
+<li><p>当前文件夹下添加.prettierrc 文件来配置 Prettier.<br>Prettier 官方文档：<br><a class="link"   target="_blank" rel="noopener" href="https://prettier.io/docs/en/options" >https://prettier.io/docs/en/options<i class="fa-sharp fa-regular fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em]"></i></p>
+</li>
+<li><p>VS Code 中 File &gt; Preferences &gt; Configure Snippets 来自定义快捷短语。</p>
+</li>
+<li><p>TODO Highlight 插件</p>
+</li>
+</ol>
+<h1 id="5-3-Installing-Node-js-and-Setting-Up-a-Dev-Environment"><a href="#5-3-Installing-Node-js-and-Setting-Up-a-Dev-Environment" class="headerlink" title="5-3 Installing Node.js and Setting Up a Dev Environment"></a>5-3 Installing Node.js and Setting Up a Dev Environment</h1><ol>
+<li>安装node.js</li>
+<li>打开vscode里面的terminal</li>
+<li>npm install live-server -g(指globally)</li>
+<li>live-server(启动，默认在8080端口)</li>
+</ol>
+<h1 id="5-4-Learning-How-to-Code"><a href="#5-4-Learning-How-to-Code" class="headerlink" title="5-4 Learning How to Code"></a>5-4 Learning How to Code</h1><h4 id="1-定目标；"><a href="#1-定目标；" class="headerlink" title="1.定目标；"></a>1.定目标；</h4><p>我的初衷是想要做出自己的小应用（app），但是还没想好是什么功能。</p>
+<p>前端+后端都要学。</p>
+<h4 id="2-课外练习；"><a href="#2-课外练习；" class="headerlink" title="2.课外练习；"></a>2.课外练习；</h4><p>否则会离不开教程。</p>
+<h4 id="3-能跑就行；"><a href="#3-能跑就行；" class="headerlink" title="3.能跑就行；"></a>3.能跑就行；</h4><p>不拘泥于代码“质量”，不要感到沮丧。写，大量地写就完了。</p>
+<p>干净、整洁的代码会随时间到来。</p>
+<h4 id="4-拥抱无知；"><a href="#4-拥抱无知；" class="headerlink" title="4.拥抱无知；"></a>4.拥抱无知；</h4><p>Embrace the fact that <strong>you will never know everything</strong>.</p>
+<p>专注于你所需要的，达成你的目标。其它都不必要；</p>
+<p>不要给自己太多预期和负担，</p>
+<p>也不要和那些顶级开发者去作对比，</p>
+<p>因为他们<strong>确实</strong>比你知道的多。（crap</p>
+<h4 id="5-分享交流；"><a href="#5-分享交流；" class="headerlink" title="5.分享交流；"></a>5.分享交流；</h4><p>不要孤立地学习编程。</p>
+<p>和别人交流你的概念，能解释出来才好；</p>
+<p>亮出你的目标，让自己需要负责。</p>
+<p>分享自己的学习进度，互相激励。</p>
+<h4 id="6-不，你还算不上一个Web-Developer…"><a href="#6-不，你还算不上一个Web-Developer…" class="headerlink" title="6.不，你还算不上一个Web Developer…"></a>6.不，你还算不上一个Web Developer…</h4><p>课程只是你人生的起点。</p>
+<p>Just keep going, keep coding, and keep building.</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/img/1.png"
+                      alt="{B66E13D3-2F8A-4CFE-AFE5-E4F873A62F13}"
+                ></p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/img/2.png"
+                     
+                ></p>
+<h1 id="5-6-Using-Google-StackOverflow-and-MDN"><a href="#5-6-Using-Google-StackOverflow-and-MDN" class="headerlink" title="5-6 Using Google, StackOverflow and MDN"></a>5-6 Using Google, StackOverflow and MDN</h1><h1 id="5-7-Debugging-Fixing-Errors"><a href="#5-7-Debugging-Fixing-Errors" class="headerlink" title="5-7 Debugging (Fixing Errors)"></a>5-7 Debugging (Fixing Errors)</h1><h1 id="5-8-Debugging-with-the-Console-and-Breakpoints"><a href="#5-8-Debugging-with-the-Console-and-Breakpoints" class="headerlink" title="5-8 Debugging with the Console and Breakpoints"></a>5-8 Debugging with the Console and Breakpoints</h1><h1 id="5-9-Coding-Challenge-1"><a href="#5-9-Coding-Challenge-1" class="headerlink" title="5-9 Coding Challenge #1"></a>5-9 Coding Challenge #1</h1>
+		</div>
+
+		
+		<div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
+			<div class="article-copyright-info-container">
+    <ul>
+        <li><strong>Title:</strong> 【UdemyJS】Section5笔记（共9节）</li>
+        <li><strong>Author:</strong> Artificial-Fool</li>
+        <li><strong>Created at
+                :</strong> 2024-12-06 03:46:53</li>
+        
+            <li>
+                <strong>Updated at
+                    :</strong> 2024-12-06 18:19:00
             </li>
         
-            <li class="home-article-item">
+        <li>
+            <strong>Link:</strong> https://space.bilibili.com/636023121/2024/12/06/UdemyJS-note5/
+        </li>
+        <li>
+            <strong>
+                License:
+            </strong>
+            
 
-                
-
-                
-
-                
-                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
-                    <h3 class="home-article-title">
-                        <a href="/2024/12/01/%E7%9A%8E%E6%9C%88%E8%BF%9Enb%EF%BC%81/">
-                            皎月连nb！
-                        </a>
-                    </h3>
-
-                    <div class="home-article-content markdown-body">
-                        
-                            
-                            然后因为丢包在2024&#x2F;12&#x2F;6自搭了zerotier…(感谢老爸在不知情的状况下赞助我一年的阿里轻量服务器)
-
-                        
-                    </div>
-
-                    <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Sun Dec 01 2024 05:04:20 GMT+0800">
-                
-                    2024-12-01
-                
-            </span>
-        </span>
-        
-            <span class="home-article-category">
-                <i class="fa-solid fa-folders"></i>&nbsp;
-            <ul>
-                
-                
-                    
-                        
-                        <li>
-                            <a href="/categories/%E7%A2%8E%E7%A2%8E%E5%BF%B5/">碎碎念</a>&nbsp;
-                        </li>
-                    
-                    
-                
-            </ul>
-        </span>
-        
-        
-    </div>
-
-    <a href="/2024/12/01/%E7%9A%8E%E6%9C%88%E8%BF%9Enb%EF%BC%81/">Read more<span class="seo-reader-text">皎月连nb！</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                
-
-                
-                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
-                    <h3 class="home-article-title">
-                        <a href="/2024/11/26/UdemyJS-note3/">
-                            【UdemyJS】Section3笔记（共20节）
-                        </a>
-                    </h3>
-
-                    <div class="home-article-content markdown-body">
-                        
-                            
-                            3-2 Activate Strict Mode1234567&#x27;use strict&#x27;;//必须在文件的第一行let hasDriversLicense=false;const passTest=true;if(passTest) hasDriverLicense=true; //此处打错变量名;if（hasDriversLicense）console.log(&#x27...
-                        
-                    </div>
-
-                    <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Tue Nov 26 2024 13:14:49 GMT+0800">
-                
-                    2024-11-26
-                
-            </span>
-        </span>
-        
-            <span class="home-article-category">
-                <i class="fa-solid fa-folders"></i>&nbsp;
-            <ul>
-                
-                
-                    
-                        
-                        <li>
-                            <a href="/categories/notes/">notes</a>&nbsp;
-                        </li>
-                    
-                    
-                
-            </ul>
-        </span>
-        
-        
-            <span class="home-article-tag">
-                <i class="fa-solid fa-tags"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/tags/UdemyJS/">UdemyJS</a>&nbsp;
-                        </li>
-                    
-                </ul>
-            </span>
-        
-    </div>
-
-    <a href="/2024/11/26/UdemyJS-note3/">Read more<span class="seo-reader-text">【UdemyJS】Section3笔记（共20节）</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                
-
-                
-                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
-                    <h3 class="home-article-title">
-                        <a href="/2024/11/23/UdemyJS-note2/">
-                            【UdemyJS】Section2笔记（共24节）
-                        </a>
-                    </h3>
-
-                    <div class="home-article-content markdown-body">
-                        
-                            
-                            2-7 const and vardeclare a variable: *let, const, var(out-dated-sh*t)* //actually not mandatory but you should; or else it will be on the global object.
-
-recommend default: **const** ,then change t...
-                        
-                    </div>
-
-                    <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Sat Nov 23 2024 17:10:52 GMT+0800">
-                
-                    2024-11-23
-                
-            </span>
-        </span>
-        
-            <span class="home-article-category">
-                <i class="fa-solid fa-folders"></i>&nbsp;
-            <ul>
-                
-                
-                    
-                        
-                        <li>
-                            <a href="/categories/notes/">notes</a>&nbsp;
-                        </li>
-                    
-                    
-                
-            </ul>
-        </span>
-        
-        
-            <span class="home-article-tag">
-                <i class="fa-solid fa-tags"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/tags/UdemyJS/">UdemyJS</a>&nbsp;
-                        </li>
-                    
-                </ul>
-            </span>
-        
-    </div>
-
-    <a href="/2024/11/23/UdemyJS-note2/">Read more<span class="seo-reader-text">【UdemyJS】Section2笔记（共24节）</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                
-
-                
-                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
-                    <h3 class="home-article-title">
-                        <a href="/2024/11/23/UdemyJS-note1/">
-                            【UdemyJS】Section1笔记（共3节）
-                        </a>
-                    </h3>
-
-                    <div class="home-article-content markdown-body">
-                        
-                            
-                            这几天我会自学：【Udemy中文】JavaScript完整课程2023：从零到专家！（共18章273节）https://www.bilibili.com/video/BV1CL411o7kH
-我的测试连接：https://test.sydblog.fun/
-为了写笔记，还要学习Markdown(&#x2F;ω＼)https://www.markdownguide.org/basic-synt...
-                        
-                    </div>
-
-                    <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Sat Nov 23 2024 14:15:50 GMT+0800">
-                
-                    2024-11-23
-                
-            </span>
-        </span>
-        
-            <span class="home-article-category">
-                <i class="fa-solid fa-folders"></i>&nbsp;
-            <ul>
-                
-                
-                    
-                        
-                        <li>
-                            <a href="/categories/notes/">notes</a>&nbsp;
-                        </li>
-                    
-                    
-                
-            </ul>
-        </span>
-        
-        
-            <span class="home-article-tag">
-                <i class="fa-solid fa-tags"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/tags/UdemyJS/">UdemyJS</a>&nbsp;
-                        </li>
-                    
-                </ul>
-            </span>
-        
-    </div>
-
-    <a href="/2024/11/23/UdemyJS-note1/">Read more<span class="seo-reader-text">【UdemyJS】Section1笔记（共3节）</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                
-
-                
-                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
-                    <h3 class="home-article-title">
-                        <a href="/2024/11/20/hello-world/">
-                            Hello World
-                        </a>
-                    </h3>
-
-                    <div class="home-article-content markdown-body">
-                        
-                            
-                            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Qu...
-                        
-                    </div>
-
-                    <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Wed Nov 20 2024 22:38:40 GMT+0800">
-                
-                    2024-11-20
-                
-            </span>
-        </span>
-        
-        
-    </div>
-
-    <a href="/2024/11/20/hello-world/">Read more<span class="seo-reader-text">Hello World</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
-                </div>
-            </li>
-        
+            
+                This work is licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0">CC BY-NC-SA 4.0</a>.
+            
+        </li>
     </ul>
-
-    <div class="home-paginator px-7 py-5">
-        <div class="paginator">
-	<span class="page-number current">1</span>
 </div>
-  
+
+		</div>
+		
+
+		
+		<ul class="post-tags-box text-lg mt-1.5 flex-wrap justify-center flex md:hidden">
+			
+			<li class="tag-item mx-0.5">
+				<a href="/tags/UdemyJS/">#UdemyJS</a>&nbsp;
+			</li>
+			
+		</ul>
+		
+
+		
+
+		
+		<div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
+			
+			
+			<div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+				<a class="next" rel="next" href="/2024/12/06/UdemyJS-note4/">
+					<span class="title flex justify-center items-center">
+						<span class="post-nav-title-item">【UdemyJS】Section4笔记（共1节）</span>
+						<span class="post-nav-item">Next posts</span>
+					</span>
+					<span class="right arrow-icon flex justify-center items-center">
+						<i class="fa-solid fa-chevron-right"></i>
+					</span>
+				</a>
+			</div>
+			
+		</div>
+		
+
+
+		
+		<div class="comment-container px-2 sm:px-6 md:px-8 pb-8">
+			<div class="comments-container mt-10 w-full ">
+    <div id="comment-anchor" class="w-full h-2.5"></div>
+    <div class="comment-area-title w-full my-1.5 md:my-2.5 text-xl md:text-3xl font-bold">
+        Comments
     </div>
+    
+
+        
+            
+    <div id="waline"></div>
+    <script type="module" data-swup-reload-script>
+      import { init } from '/js/libs/waline.mjs';
+
+      function loadWaline() {
+        init({
+          el: '#waline',
+          serverURL: 'https://waline.sydblog.fun/',
+          lang: 'zh-CN',
+          dark: 'body[class~="dark-mode"]',
+          reaction: false,
+          requiredMeta: ['nick', 'mail'],
+          emoji: [],
+          
+          
+        });
+      }
+
+      if (typeof swup !== 'undefined') {
+        loadWaline();
+      } else {
+        window.addEventListener('DOMContentLoaded', loadWaline);
+      }
+    </script>
+
+
+
+        
+    
 </div>
 
+		</div>
+		
+	</div>
+
+	
+	<div class="toc-content-container">
+		<div class="post-toc-wrap">
+	<div class="post-toc">
+		<div class="toc-title">On this page</div>
+		<div class="page-title">【UdemyJS】Section5笔记（共9节）</div>
+		<ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#5-2-Setting-up-Prettier-and-VS-Code"><span class="nav-text">5-2 Setting up Prettier and VS Code</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5-3-Installing-Node-js-and-Setting-Up-a-Dev-Environment"><span class="nav-text">5-3 Installing Node.js and Setting Up a Dev Environment</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5-4-Learning-How-to-Code"><span class="nav-text">5-4 Learning How to Code</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5-6-Using-Google-StackOverflow-and-MDN"><span class="nav-text">5-6 Using Google, StackOverflow and MDN</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5-7-Debugging-Fixing-Errors"><span class="nav-text">5-7 Debugging (Fixing Errors)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5-8-Debugging-with-the-Console-and-Breakpoints"><span class="nav-text">5-8 Debugging with the Console and Breakpoints</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5-9-Coding-Challenge-1"><span class="nav-text">5-9 Coding Challenge #1</span></a></li></ol>
+
+	</div>
+</div>
+	</div>
+	
+</div>
 			</div>
 
 			
@@ -949,6 +661,26 @@ Qu...
 		</div>
 	</div>
 
+	
+	<div class="post-tools">
+		<div class="post-tools-container">
+	<ul class="article-tools-list">
+		<!-- TOC aside toggle -->
+		
+		<li class="right-bottom-tools page-aside-toggle">
+			<i class="fa-regular fa-outdent"></i>
+		</li>
+		
+
+		<!-- go comment -->
+		
+		<li class="go-comment">
+			<i class="fa-regular fa-comments"></i>
+		</li>
+		
+	</ul>
+</div>
+	</div>
 	
 
 	<div class="right-side-tools-container">
